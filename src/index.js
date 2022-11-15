@@ -2,10 +2,11 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import About from "./pages/About";
-import Card from "./pages/Card";
+import Card from "./pages/SecondCard";
 
 import Home from "./pages/Home/Home";
 import Error from "./pages/Error";
+import Cards from "./pages/Card";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
@@ -14,7 +15,7 @@ root.render(
                 <Route path="/" element={<Home />} />
 
                 <Route path="/a-propos/" element={<About />} />
-                <Route path="/card/:Card_Id" element={<Card />} />
+                <Route path="/card/:Card_Id" element={<Cards />} />
                 <Route  path="*" element={<Error />} />
             </Routes>
         </Router>
