@@ -6,7 +6,7 @@ import Card from "./pages/SecondCard";
 
 import Home from "./pages/Home/Home";
 import Error from "./pages/Error";
-import Cards from "./pages/Card";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
@@ -15,7 +15,7 @@ root.render(
                 <Route path="/" element={<Home />} />
 
                 <Route path="/a-propos/" element={<About />} />
-                <Route path="/card/:Card_Id" element={<Cards />} />
+                <Route path="/card/:Card_Id" element={<Card />} />
                 <Route  path="*" element={<Error />} />
             </Routes>
         </Router>
