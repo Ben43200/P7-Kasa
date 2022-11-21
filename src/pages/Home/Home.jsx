@@ -8,7 +8,7 @@ export default function Home() {
     const cards = stockData.map(item => {
         return (
             <Card
-
+                img src={`../images/${item.img}`}
                 location={item.location}
                 title={item.title}
 
