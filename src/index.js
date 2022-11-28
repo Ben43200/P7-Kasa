@@ -2,11 +2,12 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import About from "./pages/About";
-import Card from "./pages/SecondCard";
-
+// import Card from "./pages/SecondCard";
+import GetCard from "./pages/SecondCard";
 import Home from "./pages/Home/Home";
 import Error from "./pages/Error";
-import { useParams } from "react-router-dom";
+import Carousel from "./pages/Carousel";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -15,10 +16,10 @@ root.render(
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
-
                 <Route path="/a-propos/" element={<About />} />
-                <Route path="/card/:cardId" element={<Card />} />
+                <Route path="/Getcard/:cardId" element={<GetCard />} />
                 <Route  path="*" element={<Error />} />
+                <Route path="carousel" element={<Carousel />} />
             </Routes>
         </Router>
     </React.StrictMode>

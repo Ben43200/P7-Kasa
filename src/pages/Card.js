@@ -3,7 +3,8 @@ import React from "react";
 
 export default function Card(props) {
     console.log(props);
-    console.log(props.id);
+    // console.log(props.id);
+
     return (
         <div className="card">
             <img src={`${props.img}`} alt= "cover" className="card--image" />
