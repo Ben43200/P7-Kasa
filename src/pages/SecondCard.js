@@ -1,7 +1,7 @@
 import React from "react";
 import { stockData } from "../data";
 import Cards from "./SecondCard";
-
+import Caroussel from "./Carousel";
 import { Link, useParams } from "react-router-dom";
 
 const jsonString = JSON.stringify(stockData);
@@ -11,6 +11,11 @@ export default function GetCard (){
     const params = useParams();
 
     console.log(params); // 👉️ {userId: '4200'}
+    const listImages = [
+        "https://www.w3schools.com/css/img_5terre.jpg",
+        "https://www.w3schools.com/css/img_forest.jpg",
+        "https://www.w3schools.com/css/img_lights.jpg"
+    ];
 
     return (
         <>
@@ -29,6 +34,8 @@ export default function GetCard (){
                     );
                 })}
                 <h2>userId is 👉️ {params.userId}</h2>;
+                <Caroussel images={listImages} />
+
             </div>
         </>
     );

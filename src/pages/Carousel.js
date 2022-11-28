@@ -55,11 +55,7 @@ import React, { useState } from "react";
 export default function Caroussel(props){
     console.log(props);
     const [position, setPosition] = useState(0);
-    const carousels = [
-        "https://www.w3schools.com/css/img_5terre.jpg",
-        "https://www.w3schools.com/css/img_forest.jpg",
-        "https://www.w3schools.com/css/img_lights.jpg"
-    ];
+    const carousels = props.images;
 
     function increment(){
         const newPosition = position+1;
@@ -74,7 +70,7 @@ export default function Caroussel(props){
     return (
         <>
             <img src={carousels[position]} alt="super image" />
-            <span onClick={decrement}> $ </span>
+            <span onClick={decrement}>  > </span>
             <span>{position +1} / {carousels.length}</span>
             <span onClick={increment}> $ </span>
         </>

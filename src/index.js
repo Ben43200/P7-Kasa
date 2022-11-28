@@ -19,7 +19,6 @@ root.render(
                 <Route path="/a-propos/" element={<About />} />
                 <Route path="/Getcard/:cardId" element={<GetCard />} />
                 <Route  path="*" element={<Error />} />
-                <Route path="carousel" element={<Carousel />} />
             </Routes>
         </Router>
     </React.StrictMode>
