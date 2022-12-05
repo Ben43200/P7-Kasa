@@ -1,5 +1,6 @@
 // import React from "react";
 import { stockData } from "../data";
+import { getLogements } from "../services/dataManager";
 import Cards from "./SecondCard";
 import Carousel from "./Carousel";
 import { Link, useParams } from "react-router-dom";
@@ -35,18 +36,12 @@ const jsonString = JSON.stringify(stockData);
 export default function GetCard() {
 
     const [test, setTest] = useState([{name:"default"}]);
-    useEffect(() => {
-        testfunc();
+    useEffect( () => {
+        getLogements()
+            .then(( logements ) => { setTest(logements );});
     }, []);
 
-    async function testfunc(){
-        // const api = await fetch("https://jsonplaceholder.typicode.com/users");
-        const api = await fetch("/logement.json");
-
-        const apijson = await api.json();
-        setTest(apijson);
-        console.log(apijson);
-    }
+    // const monLogement = getOneLogement("12");
 
     return (
 
