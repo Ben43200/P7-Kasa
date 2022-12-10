@@ -33,15 +33,14 @@ const jsonString = JSON.stringify(stockData);
 // };
 
 // import { useEffect, useState } from 'react';
-export default function GetCard() {
+export default function GetCard(props) {
+    console.log(props);
 
     const [test, setTest] = useState([{name:"default"}]);
     useEffect( () => {
         getLogements()
             .then(( logements ) => { setTest(logements );});
     }, []);
-
-    // const monLogement = getOneLogement("12");
 
     return (
 
@@ -51,13 +50,14 @@ export default function GetCard() {
                     return (
                         <div key={key}>
                             <li>{item.title}</li>
-                            {/* img ={`${item.cover}`} */}
+                            <img src = {`${item.cover}`} alt="image" />
                         </div>
                     );
                 })
             }
         </div>
     );
+
 }
 
 ;
