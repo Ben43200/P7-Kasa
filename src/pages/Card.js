@@ -1,16 +1,13 @@
 import React from "react";
-// import data from "../data.json";
 
-export default function Card(props) {
-    console.log(props);
-    // console.log(props.id);
+export default function Cards({ cover, title }) {
 
     return (
-        <div className="card">
-            <img src={`${props.img}`} alt= "cover" className="card--image" />
-            <p>{props.title}</p>
-            <p>{props.location}</p>
-
-        </div>
+        <article className="card-logement">
+            <img src={cover} alt="location" />
+            <div className="card-logement__layer">
+                <p className="card-logement__title">{title}</p>
+            </div>
+        </article>
     );
-}
+};

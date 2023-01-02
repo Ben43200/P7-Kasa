@@ -1,63 +1,35 @@
-// import React from "react";
-import { stockData } from "../data";
-import { getLogements } from "../services/dataManager";
-import Cards from "./SecondCard";
-import Carousel from "./Carousel";
-import { Link, useParams } from "react-router-dom";
-import React, { Component, useEffect, useState } from "react";
+// // import React from "react";
+// import { stockData } from "../data";
+// import { getLogements } from "../services/dataManager";
+// import Cards from   "./GetCard";
+// import Carousel from "./Carousel";
+// import { Link, useParams } from "react-router-dom";
+// import React, { Component, useEffect, useState } from "react";
 
-const jsonString = JSON.stringify(stockData);
-// console.log(jsonString);
+// export default function GetCard(props) {
+//     console.log(props);
 
-// export default function GetCard (props){
-//     // const params = useParams();
-
-//     console.log(props); // 👉️ {userId: '4200'}
-//     const images = stockData.map(item => {
-
-//         return (
-//             <GetCard
-//                 img ={`${item.cover}`}
-
-//                 key={"card"+item.id}
-
-//             />
-//         );
-//     });
+//     const [test, setTest] = useState([{name:"default"}]);
+//     useEffect( () => {
+//         getLogements()
+//             .then(( logements ) => { setTest(logements );});
+//     }, []);
 
 //     return (
 
-//         <Carousel images= {images} />
-
+//         <>
+//             <Banner />
+//             <div className="cards-container">
+//                 {test.map((logement, id) => (
+//                     <div className="card_logement" key={id}>
+//                         <Link className="link_card_logement" to={`/logement/${logement.id}`}>
+//                             <Card cover={logement.cover} title={logement.title} />
+//                         </Link>
+//                     </div>
+//                 ))}
+//             </div>
+//         </>
 //     );
-// };
+// }
 
-// import { useEffect, useState } from 'react';
-export default function GetCard(props) {
-    console.log(props);
-
-    const [test, setTest] = useState([{name:"default"}]);
-    useEffect( () => {
-        getLogements()
-            .then(( logements ) => { setTest(logements );});
-    }, []);
-
-    return (
-
-        <div className="App">
-            {
-                test.map((item,key) => {
-                    return (
-                        <div key={key}>
-                            <li>{item.title}</li>
-                            <img src = {`${item.cover}`} alt="image" />
-                        </div>
-                    );
-                })
-            }
-        </div>
-    );
-
-}
-
-;
+// ;

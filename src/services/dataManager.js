@@ -52,10 +52,14 @@ async function getLogements() {
  *
  * @param   {String}  id  l'id du logement
  *
- * @return  {logement}      [return description]
+ * @return  {Promise.<logement>}      [return description]
  */
-function getOneLogement(id){
-
+async function getOneLogement(id){
+    if (!data) {
+        const response = await fetch("/logement.json");
+        data = await response.json();
+    }
+    return data.filter((logement) => logement.id === id)[0];
 }
 
 export {

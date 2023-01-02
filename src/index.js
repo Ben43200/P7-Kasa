@@ -2,8 +2,8 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import About from "./pages/About";
-// import Card from "./pages/SecondCard";
-import GetCard from "./pages/SecondCard";
+import FicheLogement from "./pages/FicheLogement";
+import Card from "./pages/Card";
 import Home from "./pages/Home/Home";
 import Error from "./pages/Error";
 import Carousel from "./pages/Carousel";
@@ -17,7 +17,7 @@ root.render(
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/a-propos/" element={<About />} />
-                <Route path="/Getcard/:cardId" element={<GetCard />} />
+                <Route path="/fichelogement/:id" element={<FicheLogement />} />
                 <Route  path="*" element={<Error />} />
             </Routes>
         </Router>
