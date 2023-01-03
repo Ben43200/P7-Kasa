@@ -24,7 +24,7 @@ export default function Home() {
             <div className="cards-container">
                 {test.map((logement, id) => (
                     <div className="card_logement" key={id}>
-                        <Link className="link_card_logement" to={`/logement/${logement.id}`}>
+                        <Link className="link_card_logement" to={`/fichelogement/${logement.id}`}>
                             <Card cover={logement.cover} title={logement.title} />
                         </Link>
                     </div>
