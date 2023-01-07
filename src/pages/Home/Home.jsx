@@ -3,6 +3,7 @@ import "./Home.css";
 import { getLogements } from "../../services/dataManager";
 import Cards from "../Card";
 import Banner from "../Banner";
+import FicheLogement from "../FicheLogement";
 import { Link, useParams } from "react-router-dom";
 import React, {  useEffect, useState } from "react";
 
@@ -27,6 +28,7 @@ export default function Home() {
                         <Link className="link_card_logement" to={`/fichelogement/${logement.id}`}>
                             <Card cover={logement.cover} title={logement.title} />
                         </Link>
+
                     </div>
                 ))}
             </div>
