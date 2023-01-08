@@ -4,6 +4,7 @@ import { getLogements, getOneLogement } from "../services/dataManager";
 import Carousel from "./Carousel";
 import { useParams } from "react-router-dom";
 import Collapsible from "./Collapsible";
+import Star from "./Star";
 
 import React, { useEffect, useState } from "react";
 import Content from "./Collapsible";
@@ -45,7 +46,9 @@ export default function FicheLogement(props) {
                                         aboutTitle="Equipements"
                                         aboutText={equipments}
                                     />
-
+                                    <div className="rate-container">
+                                        <star score={rating} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
