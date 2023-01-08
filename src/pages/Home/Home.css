@@ -56,6 +56,8 @@
   object-fit: cover;
   overflow-clip-margin: content-box;
   overflow: clip;
+  border: 2px solid white;
+border-radius: 10px;
   
 }
 
