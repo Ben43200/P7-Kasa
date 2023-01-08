@@ -3,12 +3,13 @@ import { getLogements, getOneLogement } from "../services/dataManager";
 // import Cards from "./GetCard";
 import Carousel from "./Carousel";
 import { useParams } from "react-router-dom";
-import Collapsible from "./Collapse";
+import Collapsible from "./Collapsible";
 
 import React, { useEffect, useState } from "react";
-import Content from "./Collapse";
+import Content from "./Collapsible";
 
 export default function FicheLogement() {
+
     const { id } = useParams();
 
     const [test, setTest] = useState({ id: null, pictures: [] });
@@ -35,9 +36,12 @@ export default function FicheLogement() {
                                 <h1 className="singleproduct__title">{title}</h1>
                                 <p className="singleproduct__location">{location}</p>
 
-                                <div className="singleproduct__dropdowns">
-                                    <Collapsible title="description" content={description} />
-                                    <Collapsible title="équipement" content={equipments} />
+                                <div className="collapse-fiche-container">
+                                    <Collapsible
+                                        aboutTitle="Description"
+                                        aboutText={description}
+                                    />
+
                                 </div>
                             </div>
                         </div>

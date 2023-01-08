@@ -1,31 +1,57 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+
+import { getLogements, getOneLogement } from "../services/dataManager";
 
 import vectorHaut from "../images/assets_images/vectorHaut.svg";
 import vectorBase from "../images/assets_images/vectorBas.svg";
 
-const Collapsible = () => {
+const Collapsible = (props) => {
+
+    //     const [toggle, setToggle] = useState(true);
+
+    //     return (
+    //         <>
+    //             <button
+    //                 onClick={() => setToggle(!toggle)}
+    //                 class="btn btn-primary mb-5">
+    //                 Toggle State
+    //             </button>
+    //             {toggle && (
+    //                 <ul class="list-group">
+    //                     <li class="list-group-item">{props.equipments}</li>
+    //                     <li class="list-group-item">A second item</li>
+    //                     <li class="list-group-item">A third item</li>
+    //                     <li class="list-group-item">A fourth item</li>
+    //                     <li class="list-group-item">And a fifth one</li>
+    //                 </ul>
+    //             )}
+    //         </>
+    //     );
+    // };
+
     const [toggle, setToggle] = useState(false);
 
     const toggleState = () => {
         setToggle(!toggle);
     };
 
-    // const toggle = () => {
-    //     setOPen(!open);
-    // };
-
     return (
         <div>
+
             <button onClick={toggleState}>	<img
                 className={toggle ? "chevron rotated" : "chevron"}
                 src={vectorHaut}
                 alt="chevron"
             /></button>
+
             {toggle && (
                 <div className="toggle">
-                    <h4>equipments</h4>
+                    <h1>{props.equipments}</h1>
+
                 </div>
-            )}
+            )
+            }
+
         </div>
     );
 
