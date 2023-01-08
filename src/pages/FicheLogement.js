@@ -8,7 +8,7 @@ import Collapsible from "./Collapsible";
 import React, { useEffect, useState } from "react";
 import Content from "./Collapsible";
 
-export default function FicheLogement() {
+export default function FicheLogement(props) {
 
     const { id } = useParams();
 
@@ -40,6 +40,10 @@ export default function FicheLogement() {
                                     <Collapsible
                                         aboutTitle="Description"
                                         aboutText={description}
+                                    />
+                                    <Collapsible
+                                        aboutTitle="Equipements"
+                                        aboutText={equipments}
                                     />
 
                                 </div>

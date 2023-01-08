@@ -7,28 +7,7 @@ import vectorBase from "../images/assets_images/vectorBas.svg";
 
 const Collapsible = (props) => {
 
-    //     const [toggle, setToggle] = useState(true);
-
-    //     return (
-    //         <>
-    //             <button
-    //                 onClick={() => setToggle(!toggle)}
-    //                 class="btn btn-primary mb-5">
-    //                 Toggle State
-    //             </button>
-    //             {toggle && (
-    //                 <ul class="list-group">
-    //                     <li class="list-group-item">{props.equipments}</li>
-    //                     <li class="list-group-item">A second item</li>
-    //                     <li class="list-group-item">A third item</li>
-    //                     <li class="list-group-item">A fourth item</li>
-    //                     <li class="list-group-item">And a fifth one</li>
-    //                 </ul>
-    //             )}
-    //         </>
-    //     );
-    // };
-
+    console.log(props);
     const [toggle, setToggle] = useState(false);
 
     const toggleState = () => {
@@ -38,21 +17,23 @@ const Collapsible = (props) => {
     return (
         <div>
 
-            <button onClick={toggleState}>	<img
-                className={toggle ? "chevron rotated" : "chevron"}
-                src={vectorHaut}
-                alt="chevron"
-            /></button>
+            <button onClick={toggleState}>
+                <h5>{props.aboutTitle}</h5>	<img
+                    className={toggle ? "chevron rotated" : "chevron"}
+                    src={vectorHaut}
+                    alt="chevron"
+                /></button>
 
             {toggle && (
                 <div className="toggle">
-                    <h1>{props.equipments}</h1>
+                    <p> {`${props.aboutText}`}</p>
 
                 </div>
             )
             }
 
         </div>
+
     );
 
 };
