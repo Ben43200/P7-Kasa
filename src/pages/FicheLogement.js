@@ -37,18 +37,18 @@ export default function FicheLogement(props) {
 
                                 <h1 className="singleproduct__title">{title}</h1>
                                 <p className="singleproduct__location">{location}</p>
+                                <div className="rate-container">
+                                    <RatingStars score={rating} />
+                                    <div className="collapse-fiche-container">
+                                        <Collapsible
+                                            aboutTitle="Description"
+                                            aboutText={description}
+                                        />
+                                        <Collapsible
+                                            aboutTitle="Equipements"
+                                            aboutText={equipments}
+                                        />
 
-                                <div className="collapse-fiche-container">
-                                    <Collapsible
-                                        aboutTitle="Description"
-                                        aboutText={description}
-                                    />
-                                    <Collapsible
-                                        aboutTitle="Equipements"
-                                        aboutText={equipments}
-                                    />
-                                    <div className="rate-container">
-                                        <RatingStars score={rating} />
                                     </div>
                                 </div>
                             </div>
