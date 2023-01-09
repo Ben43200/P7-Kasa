@@ -38,7 +38,7 @@ export default function FicheLogement(props) {
                                 <h1 className="singleproduct__title">{title}</h1>
                                 <p className="singleproduct__location">{location}</p>
                                 <div className="rate-container">
-                                    <Host aboutText={host} />
+                                    <Host hostName={host} />
                                     <RatingStars score={rating} />
 
                                     <div className="collapse-fiche-container">
