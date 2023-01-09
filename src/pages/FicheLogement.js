@@ -4,7 +4,7 @@ import { getLogements, getOneLogement } from "../services/dataManager";
 import Carousel from "./Carousel";
 import { useParams } from "react-router-dom";
 import Collapsible from "./Collapsible";
-import Star from "./Star";
+import Host from "./Host";
 
 import React, { useEffect, useState } from "react";
 import Content from "./Collapsible";
@@ -38,7 +38,9 @@ export default function FicheLogement(props) {
                                 <h1 className="singleproduct__title">{title}</h1>
                                 <p className="singleproduct__location">{location}</p>
                                 <div className="rate-container">
+                                    <Host aboutText={host} />
                                     <RatingStars score={rating} />
+
                                     <div className="collapse-fiche-container">
                                         <Collapsible
                                             aboutTitle="Description"
