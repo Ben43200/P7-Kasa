@@ -4,6 +4,7 @@ import { getLogements, getOneLogement } from "../services/dataManager";
 
 import vectorHaut from "../images/assets_images/vectorHaut.svg";
 import vectorBase from "../images/assets_images/vectorBas.svg";
+import "./collapsible.css";
 
 const Collapsible = (props) => {
 
