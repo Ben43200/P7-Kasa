@@ -8,6 +8,7 @@ import Star from "./Star";
 
 import React, { useEffect, useState } from "react";
 import Content from "./Collapsible";
+import RatingStars from "./Star";
 
 export default function FicheLogement(props) {
 
@@ -47,7 +48,7 @@ export default function FicheLogement(props) {
                                         aboutText={equipments}
                                     />
                                     <div className="rate-container">
-                                        <star score={rating} />
+                                        <RatingStars score={rating} />
                                     </div>
                                 </div>
                             </div>
