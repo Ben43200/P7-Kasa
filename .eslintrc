@@ -92,9 +92,9 @@
         "arrow-spacing": [
             "warn"
         ],
-        "sort-imports": [
-            "warn"
-        ],
+        // "sort-imports": [
+        //     "warn"
+        // ],
         "sort-keys": [
             "warn"
         ],

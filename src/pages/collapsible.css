@@ -1,11 +1,27 @@
-.chevron {
+.collapsible{
+	background-color: grey;
+}
+.chevron{
+	display: inline-flex;
+}
+.chevron::after{
+	content:"";
+	background-image: url(/public/images/vectorHaut.svg);
 	width: 30px;
+	height: 30px;
+    background-repeat: no-repeat;
+	background-size: contain;
 	transform: rotate(0deg);
 	transition: 0.4s 0.4s ease-in-out;
+    display: block;
+    background-position: center;
 
-	@media screen and (min-width: $breakpoint-desktop) {
+	/* @media screen and (min-width: $breakpoint-desktop) {
 		width: 15px;
-	}
+	} */
+}
+.chevron.unfold::after{
+	transform: rotate(90deg);
 }
 
 .rotated {

@@ -4,18 +4,18 @@ import { getLogements } from "../../services/dataManager";
 import Cards from "../Card";
 import Banner from "../Banner";
 import FicheLogement from "../FicheLogement";
-import { Link, useParams } from "react-router-dom";
-import React, {  useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-import Card from "../Card";
+// import Card from "../Card";
 import Carousel from "../Carousel";
+import HomeCard from "../../components/homeCard/HomeCard";
 
 export default function Home() {
 
-    const [test, setTest] = useState([{name:"default"}]);
-    useEffect( () => {
+    const [test, setTest] = useState([{ name: "default" }]);
+    useEffect(() => {
         getLogements()
-            .then(( logements ) => { setTest(logements );});
+            .then((logements) => { setTest(logements); });
     }, []);
 
     return (
@@ -24,12 +24,7 @@ export default function Home() {
             <Banner />
             <div className="cards-container">
                 {test.map((logement, id) => (
-                    <div className="card_logement" key={id}>
-                        <Link className="link_card_logement" to={`/fichelogement/${logement.id}`}>
-                            <Card cover={logement.cover} title={logement.title} />
-                        </Link>
-
-                    </div>
+                    <HomeCard {...logement} key={id} />
                 ))}
             </div>
         </>

@@ -1,10 +1,8 @@
+// import { getLogements, getOneLogement } from "../services/dataManager";
 import React, { useEffect, useState } from "react";
-
-import { getLogements, getOneLogement } from "../services/dataManager";
-
-import vectorHaut from "../images/assets_images/vectorHaut.svg";
-import vectorBase from "../images/assets_images/vectorBas.svg";
 import "./collapsible.css";
+// import vectorBase from "../images/assets_images/vectorBas.svg";
+// import vectorHaut from "../images/assets_images/vectorHaut.svg";
 
 const Collapsible = (props) => {
 
@@ -16,20 +14,11 @@ const Collapsible = (props) => {
     };
 
     return (
-        <div>
-
-            <button onClick={toggleState}>
-                <h5>{props.aboutTitle}</h5>	<img
-                    className={toggle ? "chevron rotated" : "chevron"}
-                    src={vectorHaut}
-                    alt="chevron"
-                /></button>
+        <div className={"collapsible"} onClick={toggleState}>
+            <h5 className={`chevron ${toggle ? "unfold" : ""}`}>{props.aboutTitle}</h5>
 
             {toggle && (
-                <div className="toggle">
-                    <p> {`${props.aboutText}`}</p>
-
-                </div>
+                <div className="toggle">{`${props.aboutText}`}</div>
             )
             }
 
