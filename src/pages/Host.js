@@ -5,6 +5,8 @@ const Host = (host) => {
     return (
         <>
             <p>{host.name}</p>
+            <img className="author" src={host.picture} alt="auteur" />
+
         </>
 
     );
