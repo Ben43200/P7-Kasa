@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 // import Cards from "./GetCard";
 import Carousel from "../../components/Caroussel/Carousel";
 import Collapsible from "../../components/Collapsible/Collapsible";
-import Host from "../Host";
+import Host from "../../components/Host/Host";
 import { getOneLogement } from "../../services/dataManager";
 import RatingStars from "../../components/Star/Star";
 import { useParams } from "react-router-dom";
