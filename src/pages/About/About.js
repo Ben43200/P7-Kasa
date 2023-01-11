@@ -1,10 +1,10 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import Collapsible from "./Collapsible";
-import aboutTab from "../Tableau.json";
-import logo from "../images/assets_images/LOGO.svg";
-import backgroundAbout from "../images/assets_images/about-background.png";
+import Collapsible from "../../components/Collapsible/Collapsible";
+import aboutTab from "../../Tableau.json";
+import logo from "../../images/logo.svg";
+import backgroundAbout from "../../images/about-background.png";
 
 export default function About() {
     return (

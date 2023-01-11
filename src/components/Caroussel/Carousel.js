@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FicheLogement from "./FicheLogement";
+import FicheLogement from "../../pages/Fichelogement/FicheLogement";
 
 export default function Carousel({ images }) {
     console.log(images);

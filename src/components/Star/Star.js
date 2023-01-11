@@ -1,7 +1,7 @@
 
 import React from "react";
-import fullStar from "../images/assets_images/star-rate.svg";
-import emptyStar from "../images/assets_images/emptyStar.svg";
+import fullStar from "../../images/star-rate.svg";
+import emptyStar from "../../images/emptyStar.svg";
 
 const RatingStars = ({ score }) => {
     const GRADES = [1, 2, 3, 4, 5];

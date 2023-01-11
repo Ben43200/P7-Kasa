@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/assets_images/LOGO.svg";
-import background from "../images/assets_images/background-banner.png";
+import logo from "../../images/logo.svg";
+import background from "../../images/background-banner.png";
 
 export default function Banner() {
     return (

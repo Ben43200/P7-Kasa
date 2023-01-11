@@ -1,12 +1,12 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ReactDOM from "react-dom/client";
-import About from "./pages/About";
-import FicheLogement from "./pages/FicheLogement";
+import About from "./pages/About/About";
+import FicheLogement from "./pages/Fichelogement/FicheLogement";
 import Card from "./pages/Card";
 import Home from "./pages/Home/Home";
-import Error from "./pages/Error";
-import Carousel from "./pages/Carousel";
+import Error from "./pages/Error/Error";
+import Carousel from "./components/Caroussel/Carousel";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -18,7 +18,7 @@ root.render(
                 <Route path="/" element={<Home />} />
                 <Route path="/a-propos/" element={<About />} />
                 <Route path="/fichelogement/:id" element={<FicheLogement />} />
-                <Route  path="*" element={<Error />} />
+                <Route path="*" element={<Error />} />
             </Routes>
         </Router>
     </React.StrictMode>

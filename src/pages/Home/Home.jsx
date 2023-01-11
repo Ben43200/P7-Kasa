@@ -2,13 +2,13 @@
 import "./Home.css";
 import { getLogements } from "../../services/dataManager";
 import Cards from "../Card";
-import Banner from "../Banner";
-import FicheLogement from "../FicheLogement";
+import Banner from "../../components/Banner/Banner";
+import FicheLogement from "../Fichelogement/FicheLogement";
 import React, { useEffect, useState } from "react";
 
 // import Card from "../Card";
-import Carousel from "../Carousel";
-import HomeCard from "../../components/homeCard/HomeCard";
+import Carousel from "../../components/Caroussel/Carousel";
+import HomeCard from "../../components/HomeCard";
 
 export default function Home() {
 
