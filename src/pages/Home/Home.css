@@ -56,18 +56,24 @@
   object-fit: cover;
   overflow-clip-margin: content-box;
   overflow: clip;
-  border: 2px solid white;
-border-radius: 10px;
+  /* border: 2px solid white; */
+
+border-radius: 15px;
+
   
 }
 
 .cards-container {
-  display:flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-gap:30px;
-border: 2px solid black;
-border-radius: 10px;
+  
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px;
 }
+
 
 
