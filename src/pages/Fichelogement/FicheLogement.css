@@ -47,7 +47,7 @@
 .stars {
     display: inline-flex;
     font-family: "Font Awesome 5 Free";
-    color : red;
+    color : #ff6060;
 }
 .stars::before {
     font-weight:bold;
