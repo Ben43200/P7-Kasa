@@ -1,15 +1,16 @@
 import React from "react";
 
-const Tag = (tags) => {
+const Tags = ({ tags }) => {
     console.log(tags);
     return (
-        <div className="tagCont">
-            <ul className="TagList"><li>{tags.tag}</li>
-            </ul>
-        </div>
+        <ul>
+            {tags.map((tag) => (
+                <li key={tag}>{tag}</li>
+            ))}
+        </ul>
 
     );
 
 };
 
-export default Tag;
+export default Tags;

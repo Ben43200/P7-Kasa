@@ -1,0 +1,71 @@
+.singleproduct{
+    display: grid;
+    grid-template-areas: "carousel carousel"
+    "titre titre"
+    "localisation localisation"
+    "tags tags"
+    "etoiles hote"
+    "collapse1 collapse1"
+    "collapse2 collapse2";
+
+    @media screen  AND (min-width=768px) {
+        grid-template-areas: "carousel carousel"
+            "titre hote"
+            "localisation hote"
+            "tags etoiles"
+            "collapse1 collapse2";
+    }
+}
+
+.singleproduct .carousel{
+    grid-area: carousel;
+}
+.singleproduct > h1{
+    grid-area: titre;
+}
+.singleproduct > p{
+    grid-area: localisation;
+}
+.singleproduct .host{
+    grid-area: hote;
+}
+.singleproduct > ul{
+    grid-area: tags;
+}
+
+.singleproduct .stars{
+    grid-area: etoiles;
+}
+
+.singleproduct .collapsible:first-of-type{
+    grid-area: collapse1;
+}
+.singleproduct .collapsible:last-of-type{
+    grid-area: collapse2;
+}
+
+.stars {
+    display: inline-flex;
+    font-family: "Font Awesome 5 Free";
+    color : red;
+}
+.stars::before {
+    font-weight:bold;
+}
+.stars::after {
+    font-weight:400;
+}
+
+.stars.qty4::before {
+    content: "\f005 \f005 \f005 \f005";
+}
+.stars.qty4::after {
+    content: "\f005";
+}
+
+.stars.qty3::before {
+    content: "\f005 \f005 \f005";
+}
+.stars.qty3::after {
+    content: "\f005 \f005";
+}

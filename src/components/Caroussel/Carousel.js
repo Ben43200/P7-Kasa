@@ -16,12 +16,12 @@ export default function Carousel({ images }) {
     }
 
     return (
-        <>
+        <div className="carousel">
             <img src={`${images[position]}`} alt="super image" />
             <span onClick={decrement}>  > </span>
             <span>{position + 1} / {images.length}</span>
             <span onClick={increment}> $ </span>
-        </>
+        </div>
     );
 
 }
