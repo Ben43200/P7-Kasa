@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import "./FicheLogement.css";
 // import Cards from "./GetCard";
 import Carousel from "../../components/Caroussel/Carousel";
 import Collapsible from "../../components/Collapsible/Collapsible";
 import Host from "../../components/Host/Host";
 import { getOneLogement } from "../../services/dataManager";
 import RatingStars from "../../components/Star/Star";
+import Tag from "../../components/Tag/Tag";
 import { useParams } from "react-router-dom";
 
 export default function FicheLogement(props) {
@@ -28,6 +30,11 @@ export default function FicheLogement(props) {
                                 <p className="singleproduct__location">{location}</p>
                                 <div className="rate-container">
                                     <Host {...host} />
+                                    <div className="tags-container">
+                                        {tags.map((tag) => (
+                                            <Tag key={tag} tag={tag} />
+                                        ))}
+                                    </div>
                                     <RatingStars score={rating} />
                                     <div className="collapse-fiche-container">
                                         <Collapsible aboutTitle="Description" aboutText={description} />

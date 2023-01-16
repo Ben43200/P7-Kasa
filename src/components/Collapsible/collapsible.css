@@ -1,5 +1,5 @@
 .collapsible{
-	background-color: grey;
+	background-color: white;
 }
 .chevron{
 	display: inline-flex;
@@ -15,6 +15,7 @@
 	transition: 0.4s 0.4s ease-in-out;
     display: block;
     background-position: center;
+	background-color:grey;
 
 	/* @media screen and (min-width: $breakpoint-desktop) {
 		width: 15px;
