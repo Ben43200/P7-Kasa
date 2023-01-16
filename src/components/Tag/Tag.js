@@ -4,7 +4,8 @@ const Tag = (tags) => {
     console.log(tags);
     return (
         <div className="tagCont">
-            <span className="tagBtn">{tags.tag}</span>
+            <ul className="TagList"><li>{tags.tag}</li>
+            </ul>
         </div>
 
     );

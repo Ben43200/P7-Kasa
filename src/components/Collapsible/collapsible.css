@@ -3,6 +3,8 @@
 }
 .chevron{
 	display: inline-flex;
+	background-color: #ff6060;
+	
 }
 .chevron::after{
 	content:"";
@@ -15,7 +17,8 @@
 	transition: 0.4s 0.4s ease-in-out;
     display: block;
     background-position: center;
-	background-color:grey;
+	/* background-color:grey; */
+	color:white;
 
 	/* @media screen and (min-width: $breakpoint-desktop) {
 		width: 15px;

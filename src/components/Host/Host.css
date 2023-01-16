@@ -1,7 +1,7 @@
 .img-author{
     border-radius:50%;
-    width:160px;
-    height:160px;
+    width:60px;
+    height:60px;
     /* border: 2px solid red; */
     display: grid;
     grid-template-areas: "content";
