@@ -90,3 +90,9 @@
 .stars.qty3::after {
     content: "\f005 \f005";
 }
+
+.host-stars{
+    display: flex;
+    flex-direction: column;
+    
+}
