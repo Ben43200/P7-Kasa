@@ -1,18 +1,30 @@
 .singleproduct{
     display: grid;
     grid-template-areas: "carousel carousel"
-    "titre titre"
+    "titre hote"
     "localisation localisation"
     "tags tags"
-    "etoiles hote"
-    "collapse1 collapse1"
-    "collapse2 collapse2";
+    /* "etoiles hote" */
+     "collapse1 collapse2";
+
+     /* grid-template-rows: 1fr; */
+
+
+
+
+     /* grid-template-areas: "carousel carousel"
+     "titre  hote"
+     "localisation localisation"
+     "tags etoiles"
+     /* "etoiles hote" */
+      /* "collapse1 collapse2"; */ 
+
 
     @media screen  AND (min-width=768px) {
         grid-template-areas: "carousel carousel"
             "titre hote"
-            "localisation hote"
-            "tags etoiles"
+            "localisation localisation"
+            "tags tags"
             "collapse1 collapse2";
     }
 }
@@ -20,7 +32,7 @@
 .singleproduct .carousel{
     grid-area: carousel;
 }
-.singleproduct > h1{
+.singleproduct > h2{
     grid-area: titre;
 }
 .singleproduct > p{
@@ -28,13 +40,18 @@
 }
 .singleproduct .host{
     grid-area: hote;
+    display: flex;
+
 }
 .singleproduct > ul{
     grid-area: tags;
+    display: flex;
+    list-style: none;
 }
 
 .singleproduct .stars{
-    grid-area: etoiles;
+    /* grid-area: etoiles; */
+    grid-area: hote;
 }
 
 .singleproduct .collapsible:first-of-type{
@@ -43,6 +60,10 @@
 .singleproduct .collapsible:last-of-type{
     grid-area: collapse2;
 }
+
+/* .singleproduct .host .author-picture{
+  grid-area: titre;
+} */
 
 .stars {
     display: inline-flex;

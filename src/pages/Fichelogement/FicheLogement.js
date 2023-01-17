@@ -21,7 +21,7 @@ export default function FicheLogement(props) {
         ? (
             <div className="singleproduct">
                 <Carousel images={test.pictures} />
-                <h1>{title}</h1>
+                <h2>{title}</h2>
                 <p>{location}</p>
                 <Host {...host} />
                 <Tags tags={tags} />
