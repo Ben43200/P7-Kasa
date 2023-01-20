@@ -6,6 +6,7 @@
     "tags tags"
     /* "etoiles hote" */
      "collapse1 collapse2";
+    
 
      /* grid-template-rows: 1fr; */
 
@@ -31,6 +32,7 @@
 
 .singleproduct .carousel{
     grid-area: carousel;
+
 }
 .singleproduct > h2{
     grid-area: titre;
@@ -41,6 +43,7 @@
 .singleproduct .host{
     grid-area: hote;
     display: flex;
+    gap:15px;
 
 }
 .singleproduct > ul{
@@ -52,6 +55,7 @@
 .singleproduct .stars{
     /* grid-area: etoiles; */
     grid-area: hote;
+    font-size: 1.4rem;
 }
 
 .singleproduct .collapsible:first-of-type{
