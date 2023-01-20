@@ -17,9 +17,11 @@ export default function Carousel({ images }) {
     return (
         <div className="carousel">
             <img src={`${images[position]}`} alt="super image" />
-            <span onClick={decrement}>  <i className="arrow-left"></i></span>
-            <span>{position + 1} / {images.length}</span>
-            <span onClick={increment}> <i className="arrow-right"></i></span>
+            <div className="carousel-button">
+                <span onClick={decrement}>  <i className="arrow-left"></i></span>
+                <span>{position + 1} / {images.length}</span>
+                <span onClick={increment}> <i className="arrow-right"></i></span>
+            </div>
         </div>
     );
 
