@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import FicheLogement from "../../pages/Fichelogement/FicheLogement";
 
 export default function Carousel({ images }) {
     console.log(images);
@@ -18,9 +17,9 @@ export default function Carousel({ images }) {
     return (
         <div className="carousel">
             <img src={`${images[position]}`} alt="super image" />
-            <span onClick={decrement}>  > </span>
+            <span onClick={decrement}>  <i className="arrow-left"></i></span>
             <span>{position + 1} / {images.length}</span>
-            <span onClick={increment}> $ </span>
+            <span onClick={increment}> <i className="arrow-right"></i></span>
         </div>
     );
 

@@ -140,3 +140,31 @@
     flex-direction: column;
     
 }
+
+
+.arrow-right {
+    display: inline-flex;
+    font-family: "Font Awesome 5 Free";
+    
+}
+
+
+
+.arrow-right::before {
+    font-weight:bold;
+   content: "\f061";
+}
+
+
+.arrow-left::before {
+    font-weight:bold;
+    content: "\f060";
+
+}
+
+
+.arrow-left {
+    display: inline-flex;
+    font-family: "Font Awesome 5 Free";
+ 
+}
