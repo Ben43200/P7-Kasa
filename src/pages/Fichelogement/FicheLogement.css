@@ -152,19 +152,28 @@
 
 .arrow-right::before {
     font-weight:bold;
-   content: "\f061";
+   content: "\f054";
+   font-style: normal;
+   
 }
 
 
 .arrow-left::before {
     font-weight:bold;
-    content: "\f060";
+    content: "\f053";
+    font-style: normal;
 
 }
 
 
 .arrow-left {
-    display: inline-flex;
+    
     font-family: "Font Awesome 5 Free";
- 
+    grid-area: content;
+}
+
+
+
+.carousel{
+    grid-template-areas: "content";
 }
