@@ -154,6 +154,7 @@
     font-weight:bold;
    content: "\f054";
    font-style: normal;
+   font-size: 5rem;
    
 }
 
@@ -162,7 +163,7 @@
     font-weight:bold;
     content: "\f053";
     font-style: normal;
-
+    font-size: 5rem;
 }
 
 
@@ -174,6 +175,7 @@
 
 
 
-.carousel{
+.carousel .img{
     grid-template-areas: "content";
+    width:300%;
 }
