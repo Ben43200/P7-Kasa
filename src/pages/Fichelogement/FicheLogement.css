@@ -175,7 +175,8 @@
 
 
 
-.carousel .img{
+.carousel > img{
     grid-template-areas: "content";
-    width:300%;
+    width:100%;
+    object-fit: cover;
 }
