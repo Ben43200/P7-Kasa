@@ -116,7 +116,7 @@
 .stars.qty2::before {
     content: "\f005 \f005 ";
 }
-.stars.qty3::after {
+.stars.qty2::after {
     content: "\f005 \f005 \f005";
 }
 
