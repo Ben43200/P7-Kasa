@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function Carousel({ images }) {
-    console.log(images);
+    // console.log(images);
     const [position, setPosition] = useState(0);
 
     function increment() {
@@ -16,12 +16,10 @@ export default function Carousel({ images }) {
 
     return (
         <div className="carousel">
-            <img src={`${images[position]}`} alt="super image" />
-            <div className="carousel-button">
-                <span onClick={decrement}>  <i className="arrow-left"></i></span>
-                <span>{position + 1} / {images.length}</span>
-                <span onClick={increment}> <i className="arrow-right"></i></span>
-            </div>
+            <img src={`${images[position]}`} alt="super" />
+            <span onClick={decrement}>  <i className="arrow-left"></i></span>
+            <aside>{position + 1} / {images.length}</aside>
+            <span onClick={increment}> <i className="arrow-right"></i></span>
         </div>
     );
 

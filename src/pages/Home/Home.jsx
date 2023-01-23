@@ -1,13 +1,12 @@
 
 import "./Home.css";
 import { getLogements } from "../../services/dataManager";
-import Cards from "../Card";
-import Banner from "../../components/Banner/Banner";
-import FicheLogement from "../Fichelogement/FicheLogement";
+// import Cards from "../Card";
+// import FicheLogement from "../Fichelogement/FicheLogement";
 import React, { useEffect, useState } from "react";
 
 // import Card from "../Card";
-import Carousel from "../../components/Caroussel/Carousel";
+// import Carousel from "../../components/Caroussel/Carousel";
 import HomeCard from "../../components/HomeCard";
 
 export default function Home() {
@@ -20,14 +19,11 @@ export default function Home() {
 
     return (
 
-        <>
-            <Banner />
-            <div className="cards-container">
-                {test.map((logement, id) => (
-                    <HomeCard {...logement} key={id} />
-                ))}
-            </div>
-        </>
+        <main className="cards-container">
+            {test.map((logement, id) => (
+                <HomeCard {...logement} key={id} />
+            ))}
+        </main>
     );
 }
 

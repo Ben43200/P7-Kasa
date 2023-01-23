@@ -6,7 +6,7 @@ import "./Banner.css";
 
 export default function Banner() {
     return (
-        <div className="banner-container">
+        <header className="banner-container">
             <div className="banner-text-container">
 
                 <img src={logo} alt="logo" />
@@ -16,6 +16,6 @@ export default function Banner() {
                 <div className="banner-text">Chez vous, partout et ailleurs</div>
 
             </div>
-        </div>
+        </header>
     );
 }

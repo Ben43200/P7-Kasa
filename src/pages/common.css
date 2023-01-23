@@ -1,0 +1,13 @@
+#root{
+    display: grid;
+    grid-template-areas: ". header ."
+    ". main .";
+    grid-template-columns: auto 1240px auto;
+}
+
+#root > header{
+    grid-area: header ;
+}
+#root > main{
+    grid-area: main ;
+}

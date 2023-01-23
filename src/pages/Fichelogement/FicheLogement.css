@@ -173,14 +173,42 @@
     grid-area: content;
 }
 
-
+.carousel {
+    display: grid;
+    grid-template-areas: "imageStart . . "
+    "arrowLeft . arrowRight"
+    ". position imageEnd";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1240/415;
+}
 
 .carousel > img{
-    grid-template-areas: "content";
+    /* grid-template-areas: "content"; */
+    grid-area: imageStart / imageStart / imageEnd / imageEnd;
     width:100%;
+    height: 100%;
     object-fit: cover;
 }
 
+.carousel > span:first-of-type{
+    grid-area: arrowLeft;
+    display: flex;
+    align-items: center;
+}
+.carousel > span:last-of-type{
+    grid-area: arrowRight;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.carousel aside {
+    grid-area: position;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .carousel-button{
     display: flex;
     justify-content: space-between;

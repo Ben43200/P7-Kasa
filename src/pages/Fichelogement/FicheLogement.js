@@ -19,7 +19,7 @@ export default function FicheLogement(props) {
     const { title, location, rating, host, tags, equipments, description } = test;
     return test.id !== null
         ? (
-            <div className="singleproduct">
+            <main className="singleproduct">
                 <Carousel images={test.pictures} />
                 <h2>{title}</h2>
                 <p>{location}</p>
@@ -31,7 +31,7 @@ export default function FicheLogement(props) {
                 {/* <div className={"stars qty" + rating}> </div> */}
                 <Collapsible aboutTitle="Description" aboutText={description} />
                 <Collapsible aboutTitle="Equipements" aboutText={equipments} />
-            </div>
+            </main>
         )
         : null;
 }
