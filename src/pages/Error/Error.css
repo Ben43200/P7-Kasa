@@ -1,0 +1,8 @@
+.errorContainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 30px;
+    justify-content: space-evenly;
+}

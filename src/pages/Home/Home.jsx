@@ -1,6 +1,7 @@
 
 import "./Home.css";
 import { getLogements } from "../../services/dataManager";
+import background from "../../images/background-banner.png";
 // import Cards from "../Card";
 // import FicheLogement from "../Fichelogement/FicheLogement";
 import React, { useEffect, useState } from "react";
@@ -18,12 +19,18 @@ export default function Home() {
     }, []);
 
     return (
+        <>
+            <div className="heading">
+                <img src={background} alt="background" className="fond-home" />
+                <div className="banner-text">Chez vous, partout et ailleurs</div>
+            </div>
+            <main className="cards-container">
+                {test.map((logement, id) => (
+                    <HomeCard {...logement} key={id} />
+                ))}
 
-        <main className="cards-container">
-            {test.map((logement, id) => (
-                <HomeCard {...logement} key={id} />
-            ))}
-        </main>
+            </main>
+        </>
     );
 }
 

@@ -76,5 +76,7 @@ border-radius: 15px;
    
 }
 
-
+.heading{
+  grid-area: heading;
+}
 
