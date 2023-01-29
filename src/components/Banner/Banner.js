@@ -10,7 +10,7 @@ export default function Banner() {
             <div className="banner-text-container">
 
                 <img src={logo} alt="logo" />
-                <nav>
+                <nav className="menu">
                     <Link to="/">Accueil</Link>
                     <Link to="/a-propos">A propos</Link>
                 </nav>
