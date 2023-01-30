@@ -1,9 +1,8 @@
 #root{
     display: grid;
     grid-template-areas: ". header ."
-    ". heading ."
-    ". main .";
-    grid-template-columns: auto 1240px auto;
+        ". heading ."
+        ". main .";
 }
 
 #root > header{
@@ -13,3 +12,10 @@
     grid-area: main ;
 }
 
+
+@media screen AND (min-width: 1240px) {
+    #root {
+        grid-template-columns: auto 1240px auto;
+    }
+    
+}

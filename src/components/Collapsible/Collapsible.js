@@ -18,7 +18,10 @@ const Collapsible = (props) => {
             <h5 className={`chevron ${toggle ? "unfold" : ""}`}>{props.aboutTitle}</h5>
 
             {toggle && (
-                <div className="toggle">{`${props.aboutText}`}</div>
+                <div className="toggle">{Array.isArray(props.aboutText)
+                    ? <MakeList list={props.aboutText} />
+                    : `${props.aboutText}`
+                }</div>
             )
             }
 
@@ -28,6 +31,16 @@ const Collapsible = (props) => {
 
 };
 export default Collapsible;
+
+function MakeList({ list }) {
+    return (
+        <ul>
+            {
+                list.map((entry, i) => <li key={"li" + i}>{entry}</li>)
+            }
+        </ul>
+    );
+}
 
 // import React, { useState } from "react";
 // import vectorBas from "../images/assets_images/vectorBas.svg";
