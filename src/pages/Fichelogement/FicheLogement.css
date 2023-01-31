@@ -35,6 +35,8 @@
     grid-area: hote;
     display: flex;
     gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
 }
 .singleproduct > ul {
     grid-area: tags;
@@ -55,6 +57,7 @@
     grid-area: etoiles;
     font-size: 1.4rem;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .singleproduct .collapsible:first-of-type {
