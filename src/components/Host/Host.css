@@ -14,8 +14,6 @@
 .author-picture{
     grid-area: content;
     object-fit: cover;
-    /* width: 100%;
-    height: 100%; */
     width:60px;
     height:60px;
     border-radius: 50%;
@@ -23,6 +21,3 @@
 
 
 
-.author-picture{
-
-}

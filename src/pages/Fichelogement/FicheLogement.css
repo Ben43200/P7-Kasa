@@ -72,15 +72,13 @@
 }
 
 
-/* .singleproduct .host .author-picture{
-  grid-area: titre;
-} */
+
 
 .stars {
     display: inline-flex;
     font-family: 'Font Awesome 5 Free';
     color: #ff6060;
-    grid-area: hote;
+   
 }
 .stars::before {
     font-weight: bold;
