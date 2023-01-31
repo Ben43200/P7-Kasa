@@ -4,6 +4,7 @@
 .chevron{
 	display: inline-flex;
 	background-color: #ff6060;
+	width: 100%;
 	
 }
 .chevron::after{
