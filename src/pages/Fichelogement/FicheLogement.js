@@ -23,10 +23,10 @@ export default function FicheLogement(props) {
                 <Carousel images={test.pictures} />
                 <h2>{title}</h2>
                 <p>{location}</p>
-                <div className="host-stars">
-                    <Host {...host} />
-                    <div className={"stars qty" + rating}> </div>
-                </div>
+                {/* <div className="host-stars"> */}
+                <Host {...host} />
+                <div className={"stars qty" + rating}> </div>
+                {/* </div> */}
                 <Tags tags={tags} />
                 {/* <div className={"stars qty" + rating}> </div> */}
                 <Collapsible aboutTitle="Description" aboutText={description} />
