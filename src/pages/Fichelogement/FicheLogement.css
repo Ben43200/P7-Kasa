@@ -5,17 +5,10 @@
         'titre hote'
         'localisation localisation'
         'tags tags'
-        /* "etoiles hote" */
+       
         'collapse1 collapse2';
 
-    /* grid-template-rows: 1fr; */
 
-    /* grid-template-areas: "carousel carousel"
-     "titre  hote"
-     "localisation localisation"
-     "tags etoiles"
-     /* "etoiles hote" */
-    /* "collapse1 collapse2"; */
 }
 @media screen AND (min-width: 768px) {
     .singleproduct {
@@ -66,10 +59,15 @@
 
 .singleproduct .collapsible:first-of-type {
     grid-area: collapse1;
+    justify-content: flex-start;
 }
 .singleproduct .collapsible:last-of-type {
     grid-area: collapse2;
+    align-items: center;
+    justify-content: flex-end;
+   
 }
+
 
 /* .singleproduct .host .author-picture{
   grid-area: titre;
