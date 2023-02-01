@@ -15,7 +15,7 @@ const Collapsible = (props) => {
 
     return (
         <div className="collapsible" onClick={toggleState}>
-            <h5 className={`chevron ${toggle ? "unfold" : ""}`}>{props.aboutTitle}</h5>
+            <div className={`chevron ${toggle ? "unfold" : ""}`}>{props.aboutTitle}</div>
 
             {toggle && (
                 <div className="toggle">{Array.isArray(props.aboutText)

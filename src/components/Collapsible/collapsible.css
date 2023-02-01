@@ -1,19 +1,19 @@
 .collapsible{
-	background-color: white;
+	background: #f7f7f7;
+
+
 }
 .chevron{
 	display: inline-flex;
-
 	width: 100%;
 	justify-content: space-between;
-	
 	background-color: #ff6060;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
-    font-size: 1.5rem;
-	
+    font-size: 1.5rem;	
 }
+
 .chevron::after{
 	content:"";
 	background-image: url(/public/images/vectorHaut.svg);
@@ -43,5 +43,31 @@
 
 
 .toggle{
-	transition: 0.4s 0.4s ease-in-out;
+    margin-top: -5px;
+	background: #f7f7f7;
+    border-radius: 5px;
+    color: #ff6060;
+  
+    padding: 0 18px;
+ 
+
+  }
+
+
+
+
+  .toggle > ul{
+	list-style: none;
+
+  }
+
+
+
+
+
+
+
+.chevron > unfold{
+	background-color: #ff6060;
 }
+
