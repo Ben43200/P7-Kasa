@@ -1,0 +1,24 @@
+footer{
+    background-color: black;
+    display: flex;
+    /* display: grid; */
+    grid-area: hote;
+    /* display: flex; */
+    /* gap: 15px; */
+    align-items: center;
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    flex-direction: column;
+    align-content: center;
+    margin-top: 50px;
+    height: 200px;
+    justify-content: center;
+}
+
+
+
+
+.foot-text{
+    color: white;
+    margin-top: 30px;
+}

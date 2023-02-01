@@ -9,6 +9,7 @@ import Error from "./pages/Error/Error";
 // import Carousel from "./components/Caroussel/Carousel";
 
 import Banner from "./components/Banner/Banner";
+import Footer from "./components/Footer/Footer";
 
 import "./pages/common.css";
 
@@ -25,6 +26,7 @@ root.render(
                 <Route path="/fichelogement/:id" element={<FicheLogement />} />
                 <Route path="*" element={<Error />} />
             </Routes>
+            <Footer />
         </Router>
     </React.StrictMode>
 );

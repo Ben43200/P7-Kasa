@@ -2,7 +2,8 @@
     display: grid;
     grid-template-areas: ". header ."
         ". heading ."
-        ". main .";
+        ". main ."
+        ". footer .";
 }
 
 #root > header{
@@ -12,6 +13,9 @@
     grid-area: main ;
 }
 
+#root > footer{
+    grid-area: footer;
+}
 
 @media screen AND (min-width: 1240px) {
     #root {
