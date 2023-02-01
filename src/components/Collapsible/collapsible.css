@@ -1,8 +1,21 @@
 .collapsible{
-	background: white;
-
-
+	/* background: rgb(26, 14, 14);
+	/* width: 200px; */
+    /*height: 150px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; */
+/* background-color: aqua */
+background-color: white;
 }
+
+
+
+
+
+
 .chevron{
 	display: inline-flex;
 	width: 100%;
@@ -43,13 +56,14 @@
 
 
 .toggle{
-    margin-top: -5px;
+ 
 	background: #f7f7f7;
     border-radius: 5px;
     color: #ff6060;
-  
-    /* padding: 0 18px; */
- 
+	padding: 0 18px;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	
 
   }
 
@@ -67,7 +81,4 @@
 
 
 
-.chevron > unfold{
-	background-color: #ff6060;
-}
 
