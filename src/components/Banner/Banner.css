@@ -4,18 +4,15 @@
 }
 
 
-
-  
 .banner-text-container{
     display:flex;
     justify-content: space-between;
     align-items: center;
-  }
+  } 
 
   .menu{
     display:flex;
     gap: 30px;
   }
-
 
 

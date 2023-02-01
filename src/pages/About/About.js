@@ -2,6 +2,7 @@ import React from "react";
 import Collapsible from "../../components/Collapsible/Collapsible";
 import aboutTab from "../../Tableau.json";
 import backgroundAbout from "../../images/about-background.png";
+import "./About.css";
 
 export default function About() {
     return (
