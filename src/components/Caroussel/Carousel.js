@@ -11,15 +11,16 @@ export default function Carousel({ images }) {
 
     function decrement() {
         const newPosition = position - 1;
+
         (newPosition < 0) ? setPosition(images.length - 1) : setPosition(newPosition);
     }
 
     return (
         <div className="carousel">
             <img src={`${images[position]}`} alt="super" />
-            <span onClick={decrement}>  <i className="arrow-left"></i></span>
+            <span onClick={decrement}> {images.length > 1 ? (<i className="arrow-left"></i>) : (null)} </span>
             <aside>{position + 1} / {images.length}</aside>
-            <span onClick={increment}> <i className="arrow-right"></i></span>
+            <span onClick={increment}> {images.length > 1 ? (<i className="arrow-right"></i>) : (null)}</span>
         </div>
     );
 
