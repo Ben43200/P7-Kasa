@@ -15,12 +15,16 @@ export default function Carousel({ images }) {
         (newPosition < 0) ? setPosition(images.length - 1) : setPosition(newPosition);
     }
 
+    function arrow(direction, method) {
+        return <span onClick={method}> <i className={"arrow-" + direction}></i></span>;
+    }
+
     return (
         <div className="carousel">
             <img src={`${images[position]}`} alt="super" />
-            <span onClick={decrement}> {images.length > 1 ? (<i className="arrow-left"></i>) : (null)} </span>
+            {images.length > 1 && arrow("left", decrement)}
             <aside>{position + 1} / {images.length}</aside>
-            <span onClick={increment}> {images.length > 1 ? (<i className="arrow-right"></i>) : (null)}</span>
+            {images.length > 1 && arrow("right", increment)}
         </div>
     );
 

@@ -7,19 +7,17 @@ import "./About.css";
 export default function About() {
     return (
 
-        <div>
-            <main>
-                <img src={backgroundAbout} alt="background" />
-                {aboutTab.map((rule, id) => (
-                    <Collapsible
-                        key={id}
-                        aboutTitle={rule.Title}
-                        aboutText={rule.Text}
-                        aboutStyle="about-style"
-                    />
+        <main>
+            <img src={backgroundAbout} alt="background" />
+            {aboutTab.map((rule, id) => (
+                <Collapsible
+                    key={id}
+                    aboutTitle={rule.Title}
+                    aboutText={rule.Text}
+                    aboutStyle="about-style"
+                />
 
-                ))}
-            </main>
-        </div>
+            ))}
+        </main>
     );
 }

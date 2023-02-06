@@ -1,5 +1,6 @@
 // import { getLogements, getOneLogement } from "../services/dataManager";
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import "./collapsible.css";
 // import vectorBase from "../images/assets_images/vectorBas.svg";
 // import vectorHaut from "../images/assets_images/vectorHaut.svg";
@@ -18,10 +19,16 @@ const Collapsible = (props) => {
             <div className={`chevron ${toggle ? "unfold" : ""}`}>{props.aboutTitle}</div>
 
             {toggle && (
-                <div className="toggle">{Array.isArray(props.aboutText)
-                    ? <MakeList list={props.aboutText} />
-                    : `${props.aboutText}`
-                }</div>
+                <motion.div
+                    className="toggle"
+                    initial={{ height: 0 }}
+                    animate={{ height: "6rem" }}
+                    transition={{ duration: 0.5 }}
+                >
+                    {Array.isArray(props.aboutText)
+                        ? <MakeList list={props.aboutText} />
+                        : `${props.aboutText}`
+                    }</motion.div>
             )
             }
 
