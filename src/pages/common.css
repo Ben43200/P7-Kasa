@@ -3,7 +3,7 @@
     grid-template-areas: ". header ."
         ". heading ."
         ". main ."
-        ". footer .";
+        "footer footer footer";
 }
 
 #root > header{
