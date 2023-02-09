@@ -16,6 +16,11 @@
 .heading img{
   grid-area: content;
   border-radius: 25px;
+  background: rgba(0,0,0,.5);
+}
+
+.banner-text{
+  color:white;
 }
 
 .stock-container {
