@@ -1,3 +1,7 @@
 .heading{
     grid-area:heading;
 }
+
+.fond-about{
+    border-radius: 25px;
+}

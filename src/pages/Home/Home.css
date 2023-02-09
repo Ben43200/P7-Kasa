@@ -15,6 +15,7 @@
 
 .heading img{
   grid-area: content;
+  border-radius: 25px;
 }
 
 .stock-container {
