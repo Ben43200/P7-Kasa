@@ -12,12 +12,12 @@
   display: grid;
   grid-template-areas: "content";
   background:  #000;
-  border-radius: 25px;
+  border-radius: 1.5rem;
 }
 
 .heading img{
   grid-area: content;
-  border-radius: 25px;
+  border-radius: 1.5rem;
   /* background: rgba(0,0,0,.5); */
   opacity: 0.7;
 }
@@ -60,6 +60,7 @@ border-radius: 15px;
     gap: 30px;
     justify-content: center;
     padding: 30px;
+    margin-top: 2.5rem;
    
 }
 
