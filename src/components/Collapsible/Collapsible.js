@@ -22,7 +22,7 @@ const Collapsible = (props) => {
                 <motion.div
                     className="toggle"
                     initial={{ height: 0 }}
-                    animate={{ height: "6rem" }}
+                    animate={{ height: "10rem" }}
                     transition={{ duration: 0.5 }}
                 >
                     {Array.isArray(props.aboutText)
