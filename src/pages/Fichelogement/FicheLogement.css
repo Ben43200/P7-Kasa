@@ -1,15 +1,18 @@
+@media screen AND (min-width: 1024px) {
+
+
 .singleproduct {
     display: grid;
-    grid-template-areas:
+    /* grid-template-areas:
         'carousel carousel'
         'titre hote'
         'localisation etoiles'
         'tags tags'
        
-        'collapse1 collapse2';
+        'collapse1 collapse1'; */
 
 
-}
+}}
 @media screen AND (min-width: 768px) {
     .singleproduct {
         grid-template-columns: repeat(2, 1fr);
