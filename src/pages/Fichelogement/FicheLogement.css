@@ -1,4 +1,4 @@
-@media screen AND (min-width: 1024px) {
+/* @media screen AND (min-width: 1024px) {
 
 
 .singleproduct {
@@ -12,9 +12,10 @@
         'collapse1 collapse1'; */
 
 
-}}
+/*}} */
 @media screen AND (min-width: 768px) {
     .singleproduct {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             'carousel carousel'
@@ -24,7 +25,48 @@
             'collapse1 collapse2';
             column-gap: 2.5rem;
     }
+    .singleproduct .stars {
+        grid-area: etoiles;
+        font-size: 1.4rem;
+        align-items: center;
+        justify-content: flex-end;
+    }
 }
+
+
+@media screen and (min-width: 200px) and (max-width: 768px)  {
+    .singleproduct {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 6fr;
+        grid-template-areas:
+            'carousel carousel'
+            'titre tire'
+            'localisation localisation'
+            'tags tags'
+            'etoiles hote'
+            'collapse1 collapse1'
+            'collapse2 collapse2';
+          
+    }
+   
+        
+        .stars {
+            grid-area: etoiles;
+            font-size: 1.4rem;
+            align-items: center;
+            justify-content: flex-start
+        }
+    }
+
+
+
+
+
+
+
+
+
 
 .singleproduct .carousel {
     grid-area: carousel;
@@ -57,21 +99,24 @@
     margin: 10px;
 }
 
-.singleproduct .stars {
+/* .singleproduct .stars {
     grid-area: etoiles;
     font-size: 1.4rem;
     align-items: center;
     justify-content: flex-end;
-}
+} */
 
-.singleproduct .collapsible:first-of-type {
+.singleproduct .collapsible {
     grid-area: collapse1;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
 }
 .singleproduct .collapsible:last-of-type {
     grid-area: collapse2;
     align-items: center;
     justify-content: flex-end;
+    width: 100%;
    
 }
 
