@@ -13,7 +13,8 @@ const Collapsible = (props) => {
     const style = {
         characterHeight: 26,
         characterWidth: 10,
-        padding: 54
+        // padding: 54
+        padding: 50
     };
 
     const toggleState = () => {
