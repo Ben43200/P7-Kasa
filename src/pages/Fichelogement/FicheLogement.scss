@@ -28,7 +28,7 @@
         'collapse1 collapse1'
         'collapse2 collapse2';
 
-    @include media (large-desktop) {
+    @include media (desktop-model) {
         grid-template-areas:
             'carousel carousel'
             'titre hote'

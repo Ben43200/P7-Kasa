@@ -18,11 +18,11 @@ $size possible values :
         @media (min-width: 1200px){ @content; }
     }
     @else if $size == large-desktop{
+        @media (min-width: 1800px){ @content; }
+    }
+    @else if $size == desktop-model{
         @media (min-width: 1440px){ @content; }
     }
-    // @else if $size == desktop-mockup{
-    //     @media (min-width: 1440px){ @content; }
-    // }
 }
 
 
