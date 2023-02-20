@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./FicheLogement.css";
+import "./FicheLogement.scss";
 // import Cards from "./GetCard";
 import Carousel from "../../components/Caroussel/Carousel";
 import Collapsible from "../../components/Collapsible/Collapsible";
