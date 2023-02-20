@@ -1,4 +1,4 @@
-@import '../css/mixinAndFunctions.css';
+@import '../../css/mixinAndFunctions.scss';
 
 /* @media screen AND (min-width: 1024px) {
 
@@ -28,7 +28,7 @@
         'collapse1 collapse1'
         'collapse2 collapse2';
 
-    @include media(desktop-mockup) {
+    @include media (large-desktop) {
         grid-template-areas:
             'carousel carousel'
             'titre hote'
@@ -182,7 +182,10 @@
     display: inline-flex;
     font-family: 'Font Awesome 5 Free';
 }
-
+.arrow-right{
+    display: inline-flex;
+    font-family: 'Font Awesome 5 Free';
+}
 .arrow-right::before {
     font-weight: bold;
     content: '\f054';
