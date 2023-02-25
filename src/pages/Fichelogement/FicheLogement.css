@@ -1,0 +1,239 @@
+/*
+$size possible values : 
+    tablet
+    desktop
+    laptop-desktop
+    large-desktop
+    desktop-mockup
+*/
+/* @media screen AND (min-width: 1024px) {
+
+
+.singleproduct {
+    display: grid;
+    /* grid-template-areas:
+        'carousel carousel'
+        'titre hote'
+        'localisation etoiles'
+        'tags tags'
+
+        'collapse1 collapse1'; */
+/*}} */
+.singleproduct {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 6fr;
+  grid-template-areas: "carousel carousel" "titre titre" "localisation localisation" "tags tags" "etoiles hote" "collapse1 collapse1" "collapse2 collapse2";
+}
+@media screen and (min-width: 1440px) {
+  .singleproduct {
+    grid-template-areas: "carousel carousel" "titre hote" "localisation etoiles" "tags tags" "collapse1 collapse2";
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+  }
+}
+.singleproduct .stars {
+  grid-area: etoiles;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 1440px) {
+  .singleproduct .stars {
+    grid-area: etoiles;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.singleproduct .carousel {
+  aspect-ratio: 335/255;
+  grid-area: carousel;
+}
+@media screen and (min-width: 1440px) {
+  .singleproduct .carousel {
+    aspect-ratio: 1240/415;
+  }
+}
+.singleproduct .carousel .arrow-right::before {
+  font-size: 1.5rem;
+}
+.singleproduct .carousel .arrow-left::before {
+  font-size: 1.5rem;
+}
+.singleproduct > ul > li {
+  padding: 0rem;
+  background-color: #ff6060;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 25px;
+  padding: 0 10px;
+  margin: 10px;
+}
+.singleproduct > ul {
+  grid-area: tags;
+  display: flex;
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+.singleproduct > h2 {
+  grid-area: titre;
+}
+.singleproduct > p {
+  grid-area: localisation;
+}
+.singleproduct .host {
+  grid-area: hote;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* .singleproduct .stars {
+    grid-area: etoiles;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: flex-end;
+} */
+.singleproduct .collapsible {
+  grid-area: collapse1;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.singleproduct .collapsible:last-of-type {
+  grid-area: collapse2;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.stars {
+  display: inline-flex;
+  font-family: "Font Awesome 5 Free";
+  color: #ff6060;
+}
+
+.stars::before {
+  font-weight: bold;
+}
+
+.stars::after {
+  font-weight: 400;
+}
+
+.stars.qty4::before {
+  content: "\f005\f005\f005\f005";
+}
+
+.stars.qty4::after {
+  content: "\f005";
+}
+
+.stars.qty3::before {
+  content: "\f005\f005\f005";
+}
+
+.stars.qty3::after {
+  content: "\f005\f005";
+}
+
+.stars.qty5::before {
+  content: "\f005\f005\f005\f005\f005";
+}
+
+.stars.qty2::before {
+  content: "\f005\f005";
+}
+
+.stars.qty2::after {
+  content: "\f005\f005\f005";
+}
+
+.stars.qty1::before {
+  content: "\f005";
+}
+
+.stars.qty1::after {
+  content: "\f005\f005\f005\f005";
+}
+
+.host-stars {
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow-right {
+  display: inline-flex;
+  font-family: "Font Awesome 5 Free";
+}
+
+.arrow-right {
+  display: inline-flex;
+  font-family: "Font Awesome 5 Free";
+}
+
+.arrow-right::before {
+  font-weight: bold;
+  content: "\f054";
+  font-style: normal;
+  font-size: 5rem;
+}
+
+.arrow-left::before {
+  font-weight: bold;
+  content: "\f053";
+  font-style: normal;
+  font-size: 5rem;
+}
+
+.arrow-left {
+  font-family: "Font Awesome 5 Free";
+  grid-area: content;
+}
+
+.carousel {
+  display: grid;
+  grid-template-areas: "imageStart . . " "arrowLeft . arrowRight" ". position imageEnd";
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  aspect-ratio: 1240/415;
+}
+
+.carousel > img {
+  grid-area: imageStart/imageStart/imageEnd/imageEnd;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel > span:first-of-type {
+  grid-area: arrowLeft;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.carousel > span:last-of-type {
+  grid-area: arrowRight;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+}
+
+.carousel aside {
+  grid-area: position;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-button {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=FicheLogement.css.map */

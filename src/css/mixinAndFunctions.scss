@@ -7,24 +7,29 @@ $size possible values :
     desktop-mockup
 */
 
-@mixin media($size){
-    @if $size == tablet{
-        @media (min-width: 768px){ @content; }
-    }
-    @else if $size == desktop{
-        @media (min-width: 1024px){ @content; }
-    }
-    @else if $size == laptop-desktop{
-        @media (min-width: 1200px){ @content; }
-    }
-    @else if $size == large-desktop{
-        @media (min-width: 1800px){ @content; }
-    }
-    @else if $size == desktop-model{
-        @media (min-width: 1440px){ @content; }
+@mixin media($size) {
+    @if $size == tablet {
+        @media screen AND (min-width: 768px) {
+            @content;
+        }
+    } @else if $size == desktop {
+        @media screen AND (min-width: 1024px) {
+            @content;
+        }
+    } @else if $size == laptop-desktop {
+        @media screen AND (min-width: 1200px) {
+            @content;
+        }
+    } @else if $size == large-desktop {
+        @media screen AND (min-width: 1800px) {
+            @content;
+        }
+    } @else if $size == desktop-model {
+        @media screen AND (min-width: 1440px) {
+            @content;
+        }
     }
 }
-
 
 // @mixin for-size($size) {
 //     @ if $size == tablet-portrait-up {
