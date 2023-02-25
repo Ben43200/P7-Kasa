@@ -118,7 +118,6 @@ $size possible values :
 .stars {
   display: inline-flex;
   font-family: "Font Awesome 5 Free";
-  color: #ff6060;
 }
 
 .stars::before {
