@@ -55,11 +55,15 @@ $size possible values :
     aspect-ratio: 1240/415;
   }
 }
-.singleproduct .carousel .arrow-right::before {
-  font-size: 1.5rem;
-}
+.singleproduct .carousel .arrow-right::before,
 .singleproduct .carousel .arrow-left::before {
   font-size: 1.5rem;
+}
+@media screen and (min-width: 1440px) {
+  .singleproduct .carousel .arrow-right::before,
+  .singleproduct .carousel .arrow-left::before {
+    font-size: 5rem;
+  }
 }
 .singleproduct > ul > li {
   padding: 0rem;

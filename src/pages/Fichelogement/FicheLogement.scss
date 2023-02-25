@@ -58,13 +58,17 @@
         @include media(desktop-model) {
             aspect-ratio: 1240/415;
         }
-        .arrow-right::before {
-            font-size: 1.5rem;
-        }
-
+        .arrow-right::before,
         .arrow-left::before {
             font-size: 1.5rem;
+            @include media(desktop-model) {
+                font-size: 5rem;
+            }
         }
+
+        // .arrow-left::before {
+        //     font-size: 1.5rem;
+        // }
     }
 
     & > ul > li {
