@@ -83,9 +83,11 @@ $size possible values :
 }
 .singleproduct > h2 {
   grid-area: titre;
+  color: #ff6060;
 }
 .singleproduct > p {
   grid-area: localisation;
+  color: #ff6060;
 }
 .singleproduct .host {
   grid-area: hote;
@@ -93,6 +95,9 @@ $size possible values :
   gap: 15px;
   align-items: center;
   justify-content: flex-end;
+}
+.singleproduct .host > p {
+  color: #ff6060;
 }
 
 /* .singleproduct .stars {
@@ -118,6 +123,7 @@ $size possible values :
 .stars {
   display: inline-flex;
   font-family: "Font Awesome 5 Free";
+  color: #ff6060;
 }
 
 .stars::before {

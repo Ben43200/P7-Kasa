@@ -29,6 +29,9 @@
         'collapse1 collapse1'
         'collapse2 collapse2';
 
+    // & > h2 {
+    //     color: $primary-color;
+
     @include media(desktop-model) {
         grid-template-areas:
             'carousel carousel'
@@ -92,10 +95,12 @@
 
     & > h2 {
         grid-area: titre;
+        color: $primary-color;
     }
 
     & > p {
         grid-area: localisation;
+        color: $primary-color;
     }
 
     .host {
@@ -104,6 +109,9 @@
         gap: 15px;
         align-items: center;
         justify-content: flex-end;
+        & > p {
+            color: $primary-color;
+        }
     }
 }
 
