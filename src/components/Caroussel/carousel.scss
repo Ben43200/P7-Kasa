@@ -21,6 +21,12 @@
         object-fit: cover;
         border-radius: 25px;
     }
+    & > aside {
+        grid-area: position;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .arrow-right::before,
     .arrow-left::before {
         font-size: 1.5rem;
@@ -96,12 +102,12 @@
     color: white;
 }
 
-.carousel aside {
-    grid-area: position;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+// .carousel aside {
+//     grid-area: position;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
 
 .carousel-button {
     display: flex;

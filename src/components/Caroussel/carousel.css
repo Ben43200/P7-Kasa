@@ -28,6 +28,12 @@ $size possible values :
      object-fit: cover;
   border-radius: 25px;
 }
+.carousel > aside {
+  grid-area: position;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .carousel .arrow-right::before,
 .carousel .arrow-left::before {
   font-size: 1.5rem;
@@ -82,13 +88,6 @@ $size possible values :
   align-items: center;
   justify-content: flex-end;
   color: white;
-}
-
-.carousel aside {
-  grid-area: position;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .carousel-button {
