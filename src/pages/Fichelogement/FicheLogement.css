@@ -65,6 +65,8 @@ $size possible values :
 .singleproduct > h2 {
   grid-area: titre;
   color: #ff6060;
+  display: flex;
+  flex-direction: column;
 }
 .singleproduct > h3 {
   grid-area: localisation;

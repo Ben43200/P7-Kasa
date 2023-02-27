@@ -76,6 +76,9 @@
     //     //     font-size: 1.5rem;
     //     // }
     // }
+    // & > small {
+    //     grid-area: localisation;
+    // }
 
     & > ul > li {
         padding: 0rem;
@@ -98,6 +101,8 @@
     & > h2 {
         grid-area: titre;
         color: $primary-color;
+        display: flex;
+        flex-direction: column;
     }
 
     & > h3 {
