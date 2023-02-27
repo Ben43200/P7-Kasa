@@ -12,6 +12,7 @@
         ". heading ."
         ". main ."
         "footer footer footer";
+        /* row-gap:40px; */
 }
 
 #root > header{
