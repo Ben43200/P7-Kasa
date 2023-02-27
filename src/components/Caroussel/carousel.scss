@@ -14,6 +14,13 @@
         aspect-ratio: 1240/415;
         margin-bottom: 20px;
     }
+    & > img {
+        grid-area: imageStart / imageStart / imageEnd / imageEnd;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
     .arrow-right::before,
     .arrow-left::before {
         font-size: 1.5rem;
@@ -66,13 +73,13 @@
 //     aspect-ratio: 1240/415;
 // }
 
-.carousel > img {
-    grid-area: imageStart / imageStart / imageEnd / imageEnd;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-}
+// .carousel > img {
+//     grid-area: imageStart / imageStart / imageEnd / imageEnd;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     border-radius: 25px;
+// }
 
 .carousel > span:first-of-type {
     grid-area: arrowLeft;
