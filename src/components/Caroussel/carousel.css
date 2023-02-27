@@ -1,0 +1,29 @@
+/*
+$size possible values : 
+    tablet
+    desktop
+    laptop-desktop
+    large-desktop
+    desktop-mockup
+*/
+.carousel {
+  aspect-ratio: 335/255;
+  grid-area: carousel;
+}
+@media screen and (min-width: 1440px) {
+  .carousel {
+    aspect-ratio: 1240/415;
+    margin-bottom: 20px;
+  }
+}
+.carousel .arrow-right::before,
+.carousel .arrow-left::before {
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+@media screen and (min-width: 1440px) {
+  .carousel .arrow-right::before,
+  .carousel .arrow-left::before {
+    font-size: 5rem;
+  }
+}/*# sourceMappingURL=carousel.css.map */

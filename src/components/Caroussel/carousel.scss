@@ -1,0 +1,22 @@
+@import '../../css/mixinAndFunctions.scss';
+
+.carousel {
+    aspect-ratio: 335/255;
+    grid-area: carousel;
+    @include media(desktop-model) {
+        aspect-ratio: 1240/415;
+        margin-bottom: 20px;
+    }
+    .arrow-right::before,
+    .arrow-left::before {
+        font-size: 1.5rem;
+        padding: 2rem;
+        @include media(desktop-model) {
+            font-size: 5rem;
+        }
+    }
+
+    // .arrow-left::before {
+    //     font-size: 1.5rem;
+    // }
+}

@@ -46,27 +46,6 @@ $size possible values :
     justify-content: flex-end;
   }
 }
-.singleproduct .carousel {
-  aspect-ratio: 335/255;
-  grid-area: carousel;
-}
-@media screen and (min-width: 1440px) {
-  .singleproduct .carousel {
-    aspect-ratio: 1240/415;
-    margin-bottom: 20px;
-  }
-}
-.singleproduct .carousel .arrow-right::before,
-.singleproduct .carousel .arrow-left::before {
-  font-size: 1.5rem;
-  padding: 2rem;
-}
-@media screen and (min-width: 1440px) {
-  .singleproduct .carousel .arrow-right::before,
-  .singleproduct .carousel .arrow-left::before {
-    font-size: 5rem;
-  }
-}
 .singleproduct > ul > li {
   padding: 0rem;
   background-color: #ff6060;
