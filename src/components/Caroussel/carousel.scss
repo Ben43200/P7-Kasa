@@ -3,6 +3,13 @@
 .carousel {
     aspect-ratio: 335/255;
     grid-area: carousel;
+    display: grid;
+    grid-template-areas:
+        'imageStart . . '
+        'arrowLeft . arrowRight'
+        '. position imageEnd';
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     @include media(desktop-model) {
         aspect-ratio: 1240/415;
         margin-bottom: 20px;
@@ -48,16 +55,16 @@
     grid-area: content;
 }
 
-.carousel {
-    display: grid;
-    grid-template-areas:
-        'imageStart . . '
-        'arrowLeft . arrowRight'
-        '. position imageEnd';
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    aspect-ratio: 1240/415;
-}
+// .carousel {
+//     display: grid;
+//     grid-template-areas:
+//         'imageStart . . '
+//         'arrowLeft . arrowRight'
+//         '. position imageEnd';
+//     grid-template-rows: repeat(3, 1fr);
+//     grid-template-columns: repeat(3, 1fr);
+//     aspect-ratio: 1240/415;
+// }
 
 .carousel > img {
     grid-area: imageStart / imageStart / imageEnd / imageEnd;
