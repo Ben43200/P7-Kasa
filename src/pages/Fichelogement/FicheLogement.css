@@ -59,6 +59,7 @@ $size possible values :
 .singleproduct .carousel .arrow-right::before,
 .singleproduct .carousel .arrow-left::before {
   font-size: 1.5rem;
+  padding: 2rem;
 }
 @media screen and (min-width: 1440px) {
   .singleproduct .carousel .arrow-right::before,
