@@ -41,22 +41,32 @@
         justify-content: flex-end;
         color: white;
     }
-    .arrow-right::before,
+    // .arrow-right::before,
     .arrow-left::before {
         font-size: 1.5rem;
         padding: 2rem;
         font-weight: bold;
-        content: '\f054';
+        content: '\f053';
         font-style: normal;
         @include media(desktop-model) {
             font-size: 5rem;
         }
     }
+    .arrow-right::before {
+        font-weight: bold;
+        content: '\f054';
+        font-style: normal;
+        font-size: 1.5rem;
+        padding: 2rem;
 
-    // .arrow-left::before {
-    //     font-size: 1.5rem;
-    // }
+        @include media(desktop-model) {
+            font-size: 5rem;
+        }
+    }
 }
+// .arrow-left::before {
+//     font-size: 1.5rem;
+// }
 
 .arrow-right {
     display: inline-flex;
@@ -129,4 +139,31 @@
 .carousel-button {
     display: flex;
     justify-content: space-between;
+}
+
+.arrow-right {
+    display: inline-flex;
+    font-family: 'Font Awesome 5 Free';
+}
+.arrow-right {
+    display: inline-flex;
+    font-family: 'Font Awesome 5 Free';
+}
+// .arrow-right::before {
+//     font-weight: bold;
+//     content: '\f054';
+//     font-style: normal;
+//     font-size: 5rem;
+// }
+
+// .arrow-left::before {
+//     font-weight: bold;
+//     content: '\f053';
+//     font-style: normal;
+//     font-size: 5rem;
+// }
+
+.arrow-left {
+    font-family: 'Font Awesome 5 Free';
+    grid-area: content;
 }

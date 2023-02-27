@@ -47,17 +47,27 @@ $size possible values :
   justify-content: flex-end;
   color: white;
 }
-.carousel .arrow-right::before,
 .carousel .arrow-left::before {
   font-size: 1.5rem;
   padding: 2rem;
   font-weight: bold;
-  content: "\f054";
+  content: "\f053";
   font-style: normal;
 }
 @media screen and (min-width: 1440px) {
-  .carousel .arrow-right::before,
   .carousel .arrow-left::before {
+    font-size: 5rem;
+  }
+}
+.carousel .arrow-right::before {
+  font-weight: bold;
+  content: "\f054";
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+@media screen and (min-width: 1440px) {
+  .carousel .arrow-right::before {
     font-size: 5rem;
   }
 }
@@ -80,4 +90,19 @@ $size possible values :
 .carousel-button {
   display: flex;
   justify-content: space-between;
+}
+
+.arrow-right {
+  display: inline-flex;
+  font-family: "Font Awesome 5 Free";
+}
+
+.arrow-right {
+  display: inline-flex;
+  font-family: "Font Awesome 5 Free";
+}
+
+.arrow-left {
+  font-family: "Font Awesome 5 Free";
+  grid-area: content;
 }/*# sourceMappingURL=carousel.css.map */
