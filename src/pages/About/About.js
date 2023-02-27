@@ -8,7 +8,9 @@ export default function About() {
     return (
 
         <main>
-            <img src={backgroundAbout} className="fond-about" alt="background" />
+            <div className="heading-container">
+                <img src={backgroundAbout} className="fond-about" alt="background" />
+            </div>
             {aboutTab.map((rule, id) => (
                 <Collapsible
                     key={id}

@@ -1,7 +1,19 @@
-.heading{
-    grid-area:heading;
+.heading-container {
+  grid-area: heading;
+  background: #000;
+  border-radius: 25px;
 }
 
-.fond-about{
-    border-radius: 25px;
-}
+/* .heading img{
+    grid-area: content;
+    border-radius: 1.5rem;
+    background: rgba(0,0,0,.5);
+    opacity: 0.55;
+  } 
+/* /* */
+.fond-about {
+  border-radius: 25px;
+  grid-area: content;
+  /* background: rgba(0,0,0,.5); */
+  opacity: 0.55;
+}/*# sourceMappingURL=About.css.map */
