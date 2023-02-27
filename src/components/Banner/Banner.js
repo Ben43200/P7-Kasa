@@ -8,7 +8,7 @@ export default function Banner() {
     return (
         <header className="banner-container">
             <div className="banner-text-container">
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo" className="logo" />
                 <nav className="menu">
                     <Link to="/">Accueil</Link>
                     <Link to="/a-propos">A propos</Link>

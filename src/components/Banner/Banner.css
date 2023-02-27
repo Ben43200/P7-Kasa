@@ -1,3 +1,11 @@
+/*
+$size possible values : 
+    tablet
+    desktop
+    laptop-desktop
+    large-desktop
+    desktop-mockup
+*/
 .banner-text-container {
   display: flex;
   justify-content: space-between;
@@ -15,4 +23,15 @@
 
 .banner-container {
   padding: 3rem;
+}
+
+.logo {
+  height: 47px;
+  width: 145px;
+}
+@media screen and (min-width: 1440px) {
+  .logo {
+    width: 210px;
+    height: 68px;
+  }
 }/*# sourceMappingURL=Banner.css.map */
