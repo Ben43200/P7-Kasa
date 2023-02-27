@@ -26,4 +26,77 @@ $size possible values :
   .carousel .arrow-left::before {
     font-size: 5rem;
   }
+}
+
+.arrow-right {
+  display: inline-flex;
+  font-family: "Font Awesome 5 Free";
+}
+
+.arrow-right {
+  display: inline-flex;
+  font-family: "Font Awesome 5 Free";
+}
+
+.arrow-right::before {
+  font-weight: bold;
+  content: "\f054";
+  font-style: normal;
+  font-size: 5rem;
+}
+
+.arrow-left::before {
+  font-weight: bold;
+  content: "\f053";
+  font-style: normal;
+  font-size: 5rem;
+}
+
+.arrow-left {
+  font-family: "Font Awesome 5 Free";
+  grid-area: content;
+}
+
+.carousel {
+  display: grid;
+  grid-template-areas: "imageStart . . " "arrowLeft . arrowRight" ". position imageEnd";
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  aspect-ratio: 1240/415;
+}
+
+.carousel > img {
+  grid-area: imageStart/imageStart/imageEnd/imageEnd;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+.carousel > span:first-of-type {
+  grid-area: arrowLeft;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.carousel > span:last-of-type {
+  grid-area: arrowRight;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+}
+
+.carousel aside {
+  grid-area: position;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-button {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=carousel.css.map */
