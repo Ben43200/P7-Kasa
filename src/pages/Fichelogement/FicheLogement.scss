@@ -103,6 +103,8 @@
     & > h3 {
         grid-area: localisation;
         color: $primary-color;
+        /** existe t il un autre moyen? */
+        margin-top: -20px;
     }
 
     // .host {

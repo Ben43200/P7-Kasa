@@ -69,6 +69,8 @@ $size possible values :
 .singleproduct > h3 {
   grid-area: localisation;
   color: #ff6060;
+  /** existe t il un autre moyen? */
+  margin-top: -20px;
 }
 
 /* .singleproduct .stars {
