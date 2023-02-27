@@ -34,12 +34,18 @@ $size possible values :
   }
 }
 .carousel > aside {
-  grid-area: position;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 2rem;
+  visibility: hidden;
+}
+@media screen and (min-width: 1440px) {
+  .carousel > aside {
+    visibility: visible;
+    grid-area: position;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+  }
 }
 .carousel > span:first-of-type {
   grid-area: arrowLeft;

@@ -25,12 +25,16 @@
         }
     }
     & > aside {
-        grid-area: position;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 2rem;
+        visibility: hidden;
+        @include media(desktop-model) {
+            visibility: visible;
+            grid-area: position;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
     }
 
     & > span:first-of-type {
