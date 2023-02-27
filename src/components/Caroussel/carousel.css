@@ -34,6 +34,19 @@ $size possible values :
   align-items: center;
   justify-content: center;
 }
+.carousel > span:first-of-type {
+  grid-area: arrowLeft;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.carousel > span:last-of-type {
+  grid-area: arrowRight;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+}
 .carousel .arrow-right::before,
 .carousel .arrow-left::before {
   font-size: 1.5rem;
@@ -73,21 +86,6 @@ $size possible values :
 .arrow-left {
   font-family: "Font Awesome 5 Free";
   grid-area: content;
-}
-
-.carousel > span:first-of-type {
-  grid-area: arrowLeft;
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.carousel > span:last-of-type {
-  grid-area: arrowRight;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  color: white;
 }
 
 .carousel-button {

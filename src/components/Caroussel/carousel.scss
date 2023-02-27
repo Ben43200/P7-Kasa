@@ -27,6 +27,20 @@
         align-items: center;
         justify-content: center;
     }
+
+    & > span:first-of-type {
+        grid-area: arrowLeft;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    & > span:last-of-type {
+        grid-area: arrowRight;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: white;
+    }
     .arrow-right::before,
     .arrow-left::before {
         font-size: 1.5rem;
@@ -87,20 +101,20 @@
 //     border-radius: 25px;
 // }
 
-.carousel > span:first-of-type {
-    grid-area: arrowLeft;
-    display: flex;
-    align-items: center;
-    color: white;
-}
+// .carousel > span:first-of-type {
+//     grid-area: arrowLeft;
+//     display: flex;
+//     align-items: center;
+//     color: white;
+// }
 
-.carousel > span:last-of-type {
-    grid-area: arrowRight;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    color: white;
-}
+// .carousel > span:last-of-type {
+//     grid-area: arrowRight;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+//     color: white;
+// }
 
 // .carousel aside {
 //     grid-area: position;
