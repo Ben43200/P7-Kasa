@@ -71,13 +71,11 @@ $size possible values :
     font-size: 5rem;
   }
 }
-
-.arrow-right {
+.carousel .arrow-right {
   display: inline-flex;
   font-family: "Font Awesome 5 Free";
 }
-
-.arrow-right {
+.carousel .arrow-right {
   display: inline-flex;
   font-family: "Font Awesome 5 Free";
 }
