@@ -27,7 +27,7 @@ $size possible values :
 }
 @media screen and (min-width: 1440px) {
   .singleproduct {
-    grid-template-areas: "carousel carousel" "titre hote" "localisation etoiles" "tags tags" "collapse1 collapse2";
+    grid-template-areas: "carousel carousel" "titre hote" "localisation localisation" "tags etoiles" "collapse1 collapse2";
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
   }
@@ -66,18 +66,8 @@ $size possible values :
   grid-area: titre;
   color: #ff6060;
 }
-.singleproduct > p {
+.singleproduct > h3 {
   grid-area: localisation;
-  color: #ff6060;
-}
-.singleproduct .host {
-  grid-area: hote;
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-content: flex-end;
-}
-.singleproduct .host > p {
   color: #ff6060;
 }
 

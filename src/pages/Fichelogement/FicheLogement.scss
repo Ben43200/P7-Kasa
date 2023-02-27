@@ -36,8 +36,8 @@
         grid-template-areas:
             'carousel carousel'
             'titre hote'
-            'localisation etoiles'
-            'tags tags'
+            'localisation localisation'
+            'tags etoiles'
             'collapse1 collapse2';
         column-gap: 2.5rem;
     }
@@ -100,21 +100,21 @@
         color: $primary-color;
     }
 
-    & > p {
+    & > h3 {
         grid-area: localisation;
         color: $primary-color;
     }
 
-    .host {
-        grid-area: hote;
-        display: flex;
-        gap: 15px;
-        align-items: center;
-        justify-content: flex-end;
-        & > p {
-            color: $primary-color;
-        }
-    }
+    // .host {
+    //     grid-area: hote;
+    //     display: flex;
+    //     gap: 15px;
+    //     align-items: center;
+    //     justify-content: flex-end;
+    //     & > p {
+    //         color: $primary-color;
+    //     }
+    // }
 }
 
 /* .singleproduct .stars {

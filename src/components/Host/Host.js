@@ -6,7 +6,7 @@ const Host = (host) => {
     return (
         // <>
         <div className="host">
-            <p>{host.name}</p>
+            <h3>{host.name}</h3>
             {/* <div className="picture-container"> */}
             <img className="author-picture" src={host.picture} alt="auteur" />
         </div>

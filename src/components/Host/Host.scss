@@ -1,20 +1,32 @@
-@import '../../css/mixinAndFunctions.scss';
+@import '../../css/variables.scss';
 
-.picture-container {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    /* border: 2px solid red;
-    display: grid; */
-    grid-template-areas: 'content';
+// .picture-container {
+//     border-radius: 50%;
+//     width: 60px;
+//     height: 60px;
+//     /* border: 2px solid red;
+//     display: grid; */
+//     grid-template-areas: 'content';
 
-    aspect-ratio: 1;
-}
+//     aspect-ratio: 1;
+// }
 
-.author-picture {
-    grid-area: content;
-    object-fit: cover;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+.host {
+    grid-area: hote;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
+    & > h3 {
+        color: $primary-color;
+        font-size: 1.5rem;
+        display: flex;
+    }
+    .author-picture {
+        grid-area: content;
+        object-fit: cover;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
 }
