@@ -1,0 +1,30 @@
+@import '../css/mixinAndFunctions.scss';
+
+
+
+.picture-container{
+    border-radius:50%;
+    width:60px;
+    height:60px;
+    /* border: 2px solid red;
+    display: grid; */
+    grid-template-areas: "content";
+  
+    aspect-ratio: 1;
+    @include media(desktop-model){
+
+    }
+}
+
+
+
+.author-picture{
+    grid-area: content;
+    object-fit: cover;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+
+
+

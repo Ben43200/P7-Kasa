@@ -61,6 +61,7 @@
         grid-area: carousel;
         @include media(desktop-model) {
             aspect-ratio: 1240/415;
+            margin-bottom: 20px;
         }
         .arrow-right::before,
         .arrow-left::before {
@@ -228,7 +229,6 @@
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     aspect-ratio: 1240/415;
-    border-radius: 25px;
 }
 
 .carousel > img {

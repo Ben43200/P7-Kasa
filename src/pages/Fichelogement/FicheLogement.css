@@ -53,6 +53,7 @@ $size possible values :
 @media screen and (min-width: 1440px) {
   .singleproduct .carousel {
     aspect-ratio: 1240/415;
+    margin-bottom: 20px;
   }
 }
 .singleproduct .carousel .arrow-right::before,
@@ -210,7 +211,6 @@ $size possible values :
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   aspect-ratio: 1240/415;
-  border-radius: 25px;
 }
 
 .carousel > img {
