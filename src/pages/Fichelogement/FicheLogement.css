@@ -210,6 +210,7 @@ $size possible values :
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   aspect-ratio: 1240/415;
+  border-radius: 25px;
 }
 
 .carousel > img {
@@ -218,6 +219,7 @@ $size possible values :
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 25px;
 }
 
 .carousel > span:first-of-type {
