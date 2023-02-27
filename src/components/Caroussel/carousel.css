@@ -26,7 +26,12 @@ $size possible values :
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 25px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .carousel > img {
+    border-radius: 25px;
+  }
 }
 .carousel > aside {
   grid-area: position;
