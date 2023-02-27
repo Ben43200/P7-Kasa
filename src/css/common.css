@@ -2,9 +2,9 @@
     box-sizing: border-box;
 }
 
-
-
-
+body {
+    margin: 0;
+}
 
 #root{
     display: grid;
@@ -13,6 +13,9 @@
         ". main ."
         "footer footer footer";
         /* row-gap:40px; */
+    grid-template-columns: auto;
+    max-width: 100vw;
+    border: 1px solid red;
 }
 
 #root > header{
@@ -27,7 +30,7 @@
 }
 
 @media screen AND (min-width: 1240px) {
-    #root {
+    #root { 
         grid-template-columns: auto 1240px auto;
     }
     

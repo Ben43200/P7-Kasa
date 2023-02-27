@@ -8,7 +8,7 @@ import React, { useEffect, useState } from "react";
 
 // import Card from "../Card";
 // import Carousel from "../../components/Caroussel/Carousel";
-import HomeCard from "../../components/HomeCard";
+import HomeCard from "../../components/HomeCard/HomeCard";
 
 export default function Home() {
 

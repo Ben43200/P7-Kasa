@@ -11,10 +11,11 @@ const Collapsible = (props) => {
     const [height, setHeight] = useState("0rem");
     const isList = Array.isArray(props.aboutText);
     const style = {
-        characterHeight: 26,
+        characterHeight: 24,
         characterWidth: 10,
         // padding: 54
-        padding: 50
+        paddingH: 16 * 2,
+        paddingV: 50,
     };
 
     const toggleState = () => {
@@ -23,7 +24,8 @@ const Collapsible = (props) => {
 
     const ref = useRef(null);
     useEffect(() => {
-        const width = ref.current ? ref.current.offsetWidth : 1;
+        let width = ref.current ? ref.current.offsetWidth : 1;
+        width -= style.paddingH;
         setHeight(roundSize(isList
             ? estimateRows(props.aboutText, style.characterWidth, width)
             : rowsFollowingText(props.aboutText, style.characterWidth, width)
@@ -79,7 +81,7 @@ function estimateRows(list, characterSize, width) {
     return rows;
 }
 function roundSize(rows, style) {
-    return Math.ceil((style.characterHeight * rows) + style.padding) + "px";
+    return Math.ceil((style.characterHeight * rows) + style.paddingV) + "px";
 }
 
 // import React, { useState } from "react";
