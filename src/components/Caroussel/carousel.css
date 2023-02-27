@@ -51,6 +51,9 @@ $size possible values :
 .carousel .arrow-left::before {
   font-size: 1.5rem;
   padding: 2rem;
+  font-weight: bold;
+  content: "\f054";
+  font-style: normal;
 }
 @media screen and (min-width: 1440px) {
   .carousel .arrow-right::before,
@@ -67,20 +70,6 @@ $size possible values :
 .arrow-right {
   display: inline-flex;
   font-family: "Font Awesome 5 Free";
-}
-
-.arrow-right::before {
-  font-weight: bold;
-  content: "\f054";
-  font-style: normal;
-  font-size: 5rem;
-}
-
-.arrow-left::before {
-  font-weight: bold;
-  content: "\f053";
-  font-style: normal;
-  font-size: 5rem;
 }
 
 .arrow-left {
