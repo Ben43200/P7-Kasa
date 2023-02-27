@@ -78,9 +78,4 @@ $size possible values :
 .carousel .arrow-right {
   display: inline-flex;
   font-family: "Font Awesome 5 Free";
-}
-
-.carousel-button {
-  display: flex;
-  justify-content: space-between;
 }/*# sourceMappingURL=carousel.css.map */
