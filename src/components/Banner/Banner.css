@@ -1,20 +1,17 @@
-/* .fond-home{
-    width:80%;
-    
-} */
+.banner-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.menu {
+  display: flex;
+  gap: 30px;
+}
+.menu > a {
+  color: #ff6060;
+}
 
-.banner-text-container{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-  } 
-
-  .menu{
-    display:flex;
-    gap: 30px;
-  }
-
-  .banner-container{
-    padding: 3rem;
-  }
+.banner-container {
+  padding: 3rem;
+}/*# sourceMappingURL=Banner.css.map */
