@@ -21,11 +21,13 @@ grid-area: collapse1;
     height: 3.5rem;
 	align-items: center;
 	padding: 1rem;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: bold;
 }
 
+/* .chevron::after{ */
 .chevron::after{
-	content:"";
-	background-image: url(/public/images/vectorHaut.svg);
+	content: '\f077';
 	width: 30px;
 	height: 30px;
     background-repeat: no-repeat;
