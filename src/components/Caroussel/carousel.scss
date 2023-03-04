@@ -10,7 +10,7 @@
         '. position imageEnd';
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    @include media(desktop-model) {
+    @include media(desktop) {
         aspect-ratio: 1240/415;
         margin-bottom: 20px;
     }
@@ -20,13 +20,13 @@
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
-        @include media(desktop-model) {
+        @include media(desktop) {
             border-radius: 25px;
         }
     }
     & > aside {
         visibility: hidden;
-        @include media(desktop-model) {
+        @include media(desktop) {
             visibility: visible;
             grid-area: position;
             display: flex;
@@ -57,7 +57,7 @@
         font-weight: bold;
         content: '\f053';
         font-style: normal;
-        @include media(desktop-model) {
+        @include media(desktop) {
             font-size: 5rem;
         }
     }
@@ -68,7 +68,7 @@
         font-size: 1.5rem;
         padding: 2rem;
 
-        @include media(desktop-model) {
+        @include media(desktop) {
             font-size: 5rem;
         }
     }
