@@ -16,6 +16,9 @@
     grid-template-areas: 'content';
     background: #000;
     border-radius: 10px;
+    @include media(desktop) {
+        border-radius: 25px;
+    }
 }
 
 .heading img {
