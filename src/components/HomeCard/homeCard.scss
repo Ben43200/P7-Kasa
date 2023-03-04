@@ -4,11 +4,17 @@
     display: grid;
     grid-template-areas: 'content';
     gap: 40px;
-    width: calc(100vw - 60px);
+    // width: calc(100vw - 60px);
     aspect-ratio: 1;
+    height: 255px;
+    width: 335px;
     @include media(tablet) {
         width: 340px;
+        height: 340px;
     }
+    // @include media(desktop-model) {
+    //     height: 340px;
+    // }
 
     img {
         grid-area: content;

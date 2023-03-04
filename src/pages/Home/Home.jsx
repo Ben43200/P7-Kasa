@@ -1,5 +1,5 @@
 
-import "./Home.css";
+import "./Home.scss";
 import { getLogements } from "../../services/dataManager";
 import background from "../../images/background-banner.png";
 // import Cards from "../Card";
