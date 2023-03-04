@@ -48,7 +48,7 @@
         align-items: center;
         justify-content: flex-start;
 
-        @include media(desktop-model) {
+        @include media(desktop) {
             grid-area: etoiles;
             font-size: 1.4rem;
             align-items: center;
