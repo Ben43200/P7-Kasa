@@ -11,7 +11,7 @@ import Error from "./pages/Error/Error";
 import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
 
-import "./css/common.css";
+import "./css/common.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

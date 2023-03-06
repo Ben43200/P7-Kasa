@@ -1,37 +1,42 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
-#root{
-    display: grid;
-    grid-template-areas: ". header ."
-        ". heading ."
-        ". main ."
-        "footer footer footer";
-        /* row-gap:40px; */
-    grid-template-columns: auto;
-    max-width: 100vw;
-    border: 1px solid red;
+:root {
+  --hauteurHeader: 4rem;
+  --hauteurHeading: auto;
+  --hauteurFooter: 9rem;
+  --largeurWrapper: 10px;
+  --largeurContenu: calc(100vw - 20px);
+}
+@media screen and (min-width: 1440px) {
+  :root {
+    --hauteurHeader: 9rem;
+    --hauteurFooter: 9rem;
+    --largeurWrapper: auto;
+    --largeurContenu: 1240px;
+  }
 }
 
-#root > header{
-    grid-area: header ;
-}
-#root > main{
-    grid-area: main ;
-}
-
-#root > footer{
-    grid-area: footer;
+#root {
+  display: grid;
+  grid: ".      header  .     " var(--hauteurHeader) ".      heading .     " var(--hauteurHeading) ".      main    .     " auto "footer footer footer " var(--hauteurFooter)/var(--largeurWrapper) var(--largeurContenu) var(--largeurWrapper);
+  max-width: 100vw;
+  min-height: 100vh;
 }
 
-@media screen AND (min-width: 1240px) {
-    #root { 
-        grid-template-columns: auto 1240px auto;
-    }
-    
+#root > header {
+  grid-area: header;
 }
+
+#root > main {
+  grid-area: main;
+}
+
+#root > footer {
+  grid-area: footer;
+}/*# sourceMappingURL=common.css.map */

@@ -17,6 +17,12 @@ $size possible values :
 }
 @media screen and (min-width: 768px) {
   .homeCard {
+    height: 340px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .homeCard {
     width: 340px;
     height: 340px;
   }

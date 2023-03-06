@@ -6,14 +6,19 @@ import Collapsible from "../../components/Collapsible/Collapsible";
 import Host from "../../components/Host/Host";
 import { getOneLogement } from "../../services/dataManager";
 import Tags from "../../components/Tag/Tag";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 export default function FicheLogement(props) {
+    const navigate = useNavigate();
     const { id } = useParams();
     const [test, setTest] = useState({ id: null, pictures: [] });
     useEffect(() => {
         getOneLogement(id)
-            .then((logement) => { setTest(logement); });
+            .then((logement) => {
+                logement
+                    ? setTest(logement)
+                    : navigate("/error");
+            });
     }, [id]);
     console.log(test);
     const { title, location, rating, host, tags, equipments, description } = test;

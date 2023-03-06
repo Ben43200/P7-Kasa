@@ -103,6 +103,7 @@ $size possible values :
 
 .stars::before {
   font-weight: bold;
+  letter-spacing: 0.2rem;
 }
 
 .stars::after {
