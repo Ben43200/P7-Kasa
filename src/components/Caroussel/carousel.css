@@ -14,7 +14,7 @@ $size possible values :
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .carousel {
     aspect-ratio: 1240/415;
     margin-bottom: 20px;
@@ -28,7 +28,7 @@ $size possible values :
      object-fit: cover;
   border-radius: 10px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .carousel > img {
     border-radius: 25px;
   }
@@ -36,7 +36,7 @@ $size possible values :
 .carousel > aside {
   visibility: hidden;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .carousel > aside {
     visibility: visible;
     grid-area: position;
@@ -67,7 +67,7 @@ $size possible values :
   content: "\f053";
   font-style: normal;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .carousel .arrow-left::before {
     font-size: 5rem;
   }
@@ -79,7 +79,7 @@ $size possible values :
   font-size: 1.5rem;
   padding: 2rem;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .carousel .arrow-right::before {
     font-size: 5rem;
   }

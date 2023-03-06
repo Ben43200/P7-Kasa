@@ -25,7 +25,7 @@ $size possible values :
   grid-template-rows: 6fr;
   grid-template-areas: "carousel carousel" "titre titre" "localisation localisation" "tags tags" "etoiles hote" "collapse1 collapse1" "collapse2 collapse2";
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .singleproduct {
     grid-template-areas: "carousel carousel" "titre hote" "localisation localisation" "tags etoiles" "collapse1 collapse2";
     -moz-column-gap: 2.5rem;
@@ -38,7 +38,7 @@ $size possible values :
   align-items: center;
   justify-content: flex-start;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .singleproduct .stars {
     grid-area: etoiles;
     font-size: 1.4rem;
@@ -59,8 +59,8 @@ $size possible values :
   grid-area: tags;
   display: flex;
   list-style: none;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
+  padding: 0px;
+  margin: 0px;
 }
 .singleproduct > h2 {
   grid-area: titre;

@@ -9,10 +9,20 @@
 
 .menu {
     display: flex;
-    gap: 30px;
+    gap: 10px;
+    @include media(desktop) {
+        gap: 30px;
+    }
     & > a {
         color: $primary-color;
-        font-size: 1.5rem;
+        font-size: 0.75rem;
+    }
+
+    @include media(desktop) {
+        & > a {
+            color: $primary-color;
+            font-size: 1.5rem;
+        }
     }
 }
 .banner-container {
@@ -22,7 +32,7 @@
 .logo {
     height: 47px;
     width: 145px;
-    @include media(desktop-model) {
+    @include media(desktop) {
         width: 210px;
         height: 68px;
     }
