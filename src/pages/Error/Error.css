@@ -1,8 +1,21 @@
-.errorContainer{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 30px;
-    justify-content: space-evenly;
+/* @import '../../css/mixinAndFunctions.scss'; */
+.errorContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
+
+.errorTitle {
+  font-size: 288px;
+  font-weight: 700;
+  color: #ff6060;
+}
+
+.errorText {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  color: #ff6060;
+}/*# sourceMappingURL=Error.css.map */
