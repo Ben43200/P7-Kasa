@@ -43,6 +43,9 @@
   pointer-events: none;
   font-size: 12px;
 }
+.collapse__toggle .listEquipements {
+  list-style: none;
+}
 
 .animated {
   opacity: 1;
