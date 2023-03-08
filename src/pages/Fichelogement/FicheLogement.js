@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./FicheLogement.scss";
 // import Cards from "./GetCard";
 import Carousel from "../../components/Caroussel/Carousel";
-import Collapsible from "../../components/Collapsible/Collapsible";
+// import Collapsible from "../../components/Collapsible/Collapsible";
+import Collapse from "../../components/collapse/Collapse";
 import Host from "../../components/Host/Host";
 import { getOneLogement } from "../../services/dataManager";
 import Tags from "../../components/Tag/Tag";
@@ -36,8 +37,10 @@ export default function FicheLogement(props) {
                 {/* </div> */}
                 <Tags tags={tags} />
                 {/* <div className={"stars qty" + rating}> </div> */}
-                <Collapsible aboutTitle="Description" aboutText={description} />
-                <Collapsible aboutTitle="Equipements" aboutText={equipments} />
+                {/* <Collapsible aboutTitle="Description" aboutText={description} />
+                <Collapsible aboutTitle="Equipements" aboutText={equipments} /> */}
+                <Collapse aboutTitle="Description" aboutText={description} />
+                <Collapse aboutTitle="Equipements" aboutText={equipments} />
             </main>
         )
         : null;
