@@ -6,6 +6,8 @@ export default function Collapse(props) {
     const [toggle, setToggle] = useState(false); // je definie le state du toggle (et false par défaut)
     const [heightEl, setHeightEl] = useState(); // je definie le state de la hauteur du collapse
 
+    const isList = Array.isArray(props.aboutText);
+
     const toggleState = () => {
         //je définie la fonction toggleState qui modifie la valeur toggle au clic
         setToggle(!toggle);
@@ -33,8 +35,25 @@ export default function Collapse(props) {
                 className={toggle ? "collapse__toggle animated" : "collapse__toggle"}
                 style={{ height: toggle ? `${heightEl}` : "0px" }}
             >
-                <p aria-hidden={toggle ? "true" : "false"}>{props.aboutText}</p>
+
+                <p aria-hidden={toggle ? "true" : "false"}> {isList
+                    ? <MakeList list={props.aboutText} />
+                    : `${props.aboutText}`
+                }</p>
+
+                {/* <p aria-hidden={toggle ? "true" : "false"}>{props.aboutText}</p> */}
+
             </div>
         </div>
+    );
+}
+
+function MakeList({ list }) {
+    return (
+        <ul>
+            {
+                list.map((entry, i) => <li key={"li" + i}>{entry}</li>)
+            }
+        </ul>
     );
 }
