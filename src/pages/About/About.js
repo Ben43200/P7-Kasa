@@ -3,7 +3,7 @@ import React from "react";
 import Collapse from "../../components/collapse/Collapse";
 import aboutTab from "../../Tableau.json";
 import backgroundAbout from "../../images/about-background.png";
-import "./About.css";
+import "./About.scss";
 
 export default function About() {
     return (

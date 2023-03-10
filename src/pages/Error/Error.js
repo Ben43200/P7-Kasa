@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import "./Error.css";
+import "./Error.scss";
 
 export default function Error() {
     return (
