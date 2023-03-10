@@ -1,5 +1,5 @@
 import React from "react";
-import "./Host.css";
+import "./Host.scss";
 
 const Host = (host) => {
     console.log(host);
