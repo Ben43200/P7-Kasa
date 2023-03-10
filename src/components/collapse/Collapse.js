@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react"; //import des hooks de base react
-// import Chevron from "../../assets/images/vectorBas.svg";
+// import Chevron from "../../images/vectorBas.svg";
 import "./collapse.scss";
 
 export default function Collapse(props) {
@@ -29,6 +29,8 @@ export default function Collapse(props) {
                     src={Chevron}
                     alt="chevron"
                 /> */}
+                <div className={`chevron ${toggle ? "unfold" : ""}`}></div>
+                {/* <div className={toggle ? "chevron rotated" : "chevron"}></div> */}
             </div>
             <div
                 ref={refHeight}
