@@ -1,4 +1,5 @@
 @import '../../css/variables.scss';
+@import '../../css/mixinAndFunctions.scss';
 
 .singleproduct .collapse {
     grid-area: collapse1;
@@ -36,9 +37,9 @@
         color: white;
         // font-family: 'Font Awesome 5 Free';
 
-        // @media screen and (min-width: $breakpoint-desktop) {
-        //     height: 47px;
-        // }
+        @include media(desktop) {
+            height: 47px;
+        }
 
         h2 {
             // @include font(13px, 500);
