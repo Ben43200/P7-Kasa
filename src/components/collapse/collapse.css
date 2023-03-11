@@ -79,7 +79,6 @@ $size possible values :
   display: flex;
   color: #fff;
   cursor: pointer;
-  font-size: 2rem;
   height: 3.5rem;
   align-items: center;
   padding: 0 1.5rem;
@@ -103,8 +102,7 @@ $size possible values :
 
 .chevron::after {
   content: "\f077";
-  width: 30px;
-  height: 30px;
+  font-size: 18px;
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(0deg);
@@ -113,6 +111,11 @@ $size possible values :
   background-position: center;
   /* background-color:grey; */
   color: white;
+}
+@media screen and (min-width: 1024px) {
+  .chevron::after {
+    font-size: 30px;
+  }
 }
 
 .chevron.unfold::after {
