@@ -9,14 +9,13 @@ body {
 :root {
   --hauteurHeader: 4rem;
   --hauteurHeading: auto;
-  --hauteurFooter: 9rem;
+  --hauteurFooter: 13rem;
   --largeurWrapper: 10px;
   --largeurContenu: calc(100vw - 20px);
 }
 @media screen and (min-width: 1440px) {
   :root {
     --hauteurHeader: 9rem;
-    --hauteurFooter: 9rem;
     --largeurWrapper: auto;
     --largeurContenu: 1240px;
   }
