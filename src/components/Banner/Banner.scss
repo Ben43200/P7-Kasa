@@ -17,6 +17,10 @@
         color: $primary-color;
         font-size: 0.75rem;
     }
+    &:hover,
+    &:focus {
+        text-decoration-line: underline;
+    }
 
     @include media(desktop) {
         & > a {

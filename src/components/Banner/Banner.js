@@ -10,14 +10,14 @@ export default function Banner() {
             <div className="banner-text-container">
                 <img src={logo} alt="logo" className="logo" />
                 <nav className="menu">
-                    {/* <Link to="/">Accueil</Link>
+                    <Link to="/">Accueil</Link>
                     <Link to="/a-propos">A propos</Link>
-                </nav>  */}
-                    {/* // <Nav> */}
-                    <NavLink exact activeClassName='is-active' to='/'>Home</NavLink>
-                    <NavLink activeClassName='is-active' to='/a-propos'>About</NavLink>
-                    {/* // </Nav> */}
                 </nav>
+                {/* // <Nav> */}
+                {/* <NavLink exact activeClassName='is-active' to='/'>Home</NavLink>
+                    <NavLink activeClassName='is-active' to='/a-propos'>About</NavLink> */}
+                {/* // </Nav> */}
+                {/* </nav> */}
             </div>
         </header>
     );
