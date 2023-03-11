@@ -2,7 +2,7 @@ import React from "react";
 // import Collapsible from "../../components/Collapsible/Collapsible";
 import Collapse from "../../components/collapse/Collapse";
 import aboutTab from "../../Tableau.json";
-import backgroundAbout from "../../images/about-background.png";
+// import backgroundAbout from "../../images/about-background.png";
 import "./About.scss";
 
 export default function About() {
@@ -10,7 +10,8 @@ export default function About() {
 
         <main>
             <div className="heading-container">
-                <img src={backgroundAbout} className="fond-about" alt="background" />
+                {/* <img src={backgroundAbout} className="fond-about" alt="background" /> */}
+                <div className="fond-about"></div>
             </div>
             {aboutTab.map((rule, id) => (
                 <Collapse

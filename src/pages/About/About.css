@@ -1,8 +1,17 @@
+/*
+$size possible values : 
+    tablet
+    desktop
+    laptop-desktop
+    large-desktop
+    desktop-mockup
+*/
 .heading-container {
   grid-area: heading;
   background: #000;
   border-radius: 25px;
   margin-bottom: 50px;
+  height: 223px;
 }
 
 /* .heading img{
@@ -16,7 +25,15 @@
   border-radius: 25px;
   grid-area: content;
   width: 100%;
-  height: 255px;
+  height: 223px;
+  background-image: url(../../images/mobile-about-background.png);
+  background-repeat: no-repeat;
   /* background: rgba(0,0,0,.5); */
   opacity: 0.55;
+}
+@media screen and (min-width: 359px) {
+  .fond-about {
+    background-image: url(../../images/about-background.png);
+    background-repeat: no-repeat;
+  }
 }/*# sourceMappingURL=About.css.map */
