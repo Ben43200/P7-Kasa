@@ -7,7 +7,7 @@
     margin-bottom: 50px;
     height: 223px;
     // width: 336px;
-    @media screen AND (min-width: 380px) {
+    @include media(tablet) {
         border-radius: 25px;
         width: 100%;
     }
@@ -28,7 +28,7 @@
     background-image: url(../../images/mobile-about-background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    @media screen AND (min-width: 380px) {
+    @include media(tablet) {
         background-image: url(../../images/about-background.png);
         background-repeat: no-repeat;
         border-radius: 25px;

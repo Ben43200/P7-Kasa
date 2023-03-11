@@ -13,7 +13,7 @@ $size possible values :
   margin-bottom: 50px;
   height: 223px;
 }
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 768px) {
   .heading-container {
     border-radius: 25px;
     width: 100%;
@@ -38,7 +38,7 @@ $size possible values :
   /* background: rgba(0,0,0,.5); */
   opacity: 0.55;
 }
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 768px) {
   .fond-about {
     background-image: url(../../images/about-background.png);
     background-repeat: no-repeat;
