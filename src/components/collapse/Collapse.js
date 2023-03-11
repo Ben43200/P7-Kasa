@@ -38,10 +38,10 @@ export default function Collapse(props) {
                 style={{ height: toggle ? `${heightEl}` : "0px" }}
             >
 
-                <p aria-hidden={toggle ? "true" : "false"}> {isList
+                <div className="infos" aria-hidden={toggle ? "true" : "false"}> {isList
                     ? <MakeList list={props.aboutText} />
                     : `${props.aboutText}`
-                }</p>
+                }</div>
 
                 {/* <p aria-hidden={toggle ? "true" : "false"}>{props.aboutText}</p> */}
 

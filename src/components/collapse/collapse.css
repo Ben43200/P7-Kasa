@@ -56,14 +56,14 @@ $size possible values :
   border-radius: 5px;
   transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
 }
-.collapse__toggle p {
+.collapse__toggle .infos {
   margin: 0;
   padding: 22px 15px;
   pointer-events: none;
   font-size: 12px;
 }
 @media screen and (min-width: 1024px) {
-  .collapse__toggle p {
+  .collapse__toggle .infos {
     font-size: 18px;
   }
 }
