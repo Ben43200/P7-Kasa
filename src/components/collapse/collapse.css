@@ -42,7 +42,12 @@ $size possible values :
   }
 }
 .collapse__visible h2 {
-  font-size: 13px;
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 1024px) {
+  .collapse__visible h2 {
+    font-size: 1.5rem;
+  }
 }
 .collapse__toggle {
   opacity: 0;
