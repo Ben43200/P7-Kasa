@@ -1,0 +1,94 @@
+/*
+$size possible values : 
+    tablet
+    desktop
+    laptop-desktop
+    large-desktop
+    desktop-mockup
+*/
+.carousel {
+  aspect-ratio: 335/255;
+  grid-area: carousel;
+  display: grid;
+  grid-template-areas: "imageStart . . " "arrowLeft . arrowRight" ". position imageEnd";
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (min-width: 1024px) {
+  .carousel {
+    aspect-ratio: 1240/415;
+    margin-bottom: 20px;
+  }
+}
+.carousel > img {
+  grid-area: imageStart/imageStart/imageEnd/imageEnd;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .carousel > img {
+    border-radius: 25px;
+  }
+}
+.carousel > aside {
+  visibility: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .carousel > aside {
+    visibility: visible;
+    grid-area: position;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+  }
+}
+.carousel > span:first-of-type {
+  grid-area: arrowLeft;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.carousel > span:last-of-type {
+  grid-area: arrowRight;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+}
+.carousel .arrow-left::before {
+  font-size: 1.5rem;
+  padding: 2rem;
+  font-weight: bold;
+  content: "\f053";
+  font-style: normal;
+}
+@media screen and (min-width: 1024px) {
+  .carousel .arrow-left::before {
+    font-size: 5rem;
+  }
+}
+.carousel .arrow-right::before {
+  font-weight: bold;
+  content: "\f054";
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .carousel .arrow-right::before {
+    font-size: 5rem;
+  }
+}
+.carousel .arrow-left {
+  display: inline-flex;
+  font-family: "Font Awesome 5 Free";
+}
+.carousel .arrow-right {
+  display: inline-flex;
+  font-family: "Font Awesome 5 Free";
+}/*# sourceMappingURL=carousel.css.map */
