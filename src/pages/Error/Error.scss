@@ -1,4 +1,4 @@
-/* @import '../../css/mixinAndFunctions.scss'; */
+@import '../../css/mixinAndFunctions.scss';
 @import '../../css/variables.scss';
 
 .errorContainer {
@@ -11,9 +11,13 @@
 }
 
 .errorTitle {
-    font-size: 288px;
+    font-size: 96px;
     font-weight: 700;
     color: $primary-color;
+    margin: 0;
+    @include media(desktop) {
+        font-size: 288px;
+    }
 }
 
 .errorText {
@@ -24,6 +28,13 @@
     color: $primary-color;
 }
 
-footer {
-    display: none;
+.errorLinkHome {
+    font-size: 14px;
+    color: $primary-color;
+    @include media(desktop) {
+        font-size: 18px;
+    }
 }
+// footer {
+//     display: none;
+// }

@@ -1,4 +1,11 @@
-/* @import '../../css/mixinAndFunctions.scss'; */
+/*
+$size possible values : 
+    tablet
+    desktop
+    laptop-desktop
+    large-desktop
+    desktop-mockup
+*/
 .errorContainer {
   align-items: center;
   display: flex;
@@ -7,9 +14,15 @@
 }
 
 .errorTitle {
-  font-size: 288px;
+  font-size: 96px;
   font-weight: 700;
   color: #ff6060;
+  margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .errorTitle {
+    font-size: 288px;
+  }
 }
 
 .errorText {
@@ -20,6 +33,12 @@
   color: #ff6060;
 }
 
-footer {
-  display: none;
+.errorLinkHome {
+  font-size: 14px;
+  color: #ff6060;
+}
+@media screen and (min-width: 1024px) {
+  .errorLinkHome {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=Error.css.map */
