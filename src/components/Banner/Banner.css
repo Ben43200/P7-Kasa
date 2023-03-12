@@ -25,6 +25,11 @@ $size possible values :
   color: #ff6060;
   font-size: 0.75rem;
 }
+@media screen and (min-width: 768px) {
+  .menu > a {
+    font-size: 1rem;
+  }
+}
 .menu:hover, .menu:focus {
   text-decoration-line: underline;
 }
