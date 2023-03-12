@@ -41,6 +41,12 @@ $size possible values :
   line-height: 25px;
   padding: 0 10px;
   margin: 10px;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 1024px) {
+  .singleproduct > ul > li {
+    font-size: 14px;
+  }
 }
 .singleproduct > ul {
   grid-area: tags;
@@ -48,6 +54,14 @@ $size possible values :
   list-style: none;
   padding: 0px;
   margin: 0px;
+}
+.singleproduct > li {
+  font-size: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .singleproduct > li {
+    font-size: 14px;
+  }
 }
 .singleproduct > h2 {
   grid-area: titre;
