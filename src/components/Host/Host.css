@@ -1,3 +1,11 @@
+/*
+$size possible values : 
+    tablet
+    desktop
+    laptop-desktop
+    large-desktop
+    desktop-mockup
+*/
 .host {
   grid-area: hote;
   display: flex;
@@ -7,11 +15,17 @@
 }
 .host > h3 {
   color: #ff6060;
-  font-size: 1.5rem;
+  font-size: 0.85rem;
   display: flex;
-  width: 63px;
+  width: 120px;
   text-align: right;
   justify-content: flex-end;
+}
+@media screen and (min-width: 1024px) {
+  .host > h3 {
+    width: 63px;
+    font-size: 1.2rem;
+  }
 }
 .host .author-picture {
   grid-area: content;
