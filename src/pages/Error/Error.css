@@ -26,11 +26,18 @@ $size possible values :
 }
 
 .errorText {
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 500;
   line-height: normal;
   text-align: center;
   color: #ff6060;
+  width: 260px;
+}
+@media screen and (min-width: 1024px) {
+  .errorText {
+    font-size: 36px;
+    width: 100%;
+  }
 }
 
 .errorLinkHome {

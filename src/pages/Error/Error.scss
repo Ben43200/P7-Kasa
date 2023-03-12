@@ -21,11 +21,16 @@
 }
 
 .errorText {
-    font-size: 36px;
+    font-size: 18px;
     font-weight: 500;
     line-height: normal;
     text-align: center;
     color: $primary-color;
+    width: 260px;
+    @include media(desktop) {
+        font-size: 36px;
+        width: 100%;
+    }
 }
 
 .errorLinkHome {
