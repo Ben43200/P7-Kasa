@@ -14,6 +14,11 @@ $size possible values :
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
+@media screen and (min-width: 768px) {
+  .carousel {
+    aspect-ratio: 500/255;
+  }
+}
 @media screen and (min-width: 1024px) {
   .carousel {
     aspect-ratio: 1240/415;
@@ -67,6 +72,11 @@ $size possible values :
   content: "\f053";
   font-style: normal;
 }
+@media screen and (min-width: 768px) {
+  .carousel .arrow-left::before {
+    font-size: 4rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .carousel .arrow-left::before {
     font-size: 5rem;
@@ -78,6 +88,11 @@ $size possible values :
   font-style: normal;
   font-size: 1.5rem;
   padding: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .carousel .arrow-right::before {
+    font-size: 4rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .carousel .arrow-right::before {
