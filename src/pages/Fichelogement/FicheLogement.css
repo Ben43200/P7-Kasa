@@ -6,19 +6,6 @@ $size possible values :
     large-desktop
     desktop-mockup
 */
-/* @media screen AND (min-width: 1024px) {
-
-
-.singleproduct {
-    display: grid;
-    /* grid-template-areas:
-        'carousel carousel'
-        'titre hote'
-        'localisation etoiles'
-        'tags tags'
-
-        'collapse1 collapse1'; */
-/*}} */
 .singleproduct {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -68,20 +55,8 @@ $size possible values :
   display: flex;
   flex-direction: column;
 }
-.singleproduct > h3 {
-  grid-area: localisation;
-  color: #ff6060;
-  /** existe t il un autre moyen? */
-  margin-top: -20px;
-}
 
-/* .singleproduct .stars {
-    grid-area: etoiles;
-    font-size: 1.4rem;
-    align-items: center;
-    justify-content: flex-end;
-} */
-.singleproduct .collapsible {
+.singleproduct .collapsible:first-of-type {
   grid-area: collapse1;
   justify-content: flex-end;
   align-items: center;

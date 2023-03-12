@@ -1,21 +1,6 @@
 @import '../../css/mixinAndFunctions.scss';
 @import '../../css/variables.scss';
 
-/* @media screen AND (min-width: 1024px) {
-
-
-.singleproduct {
-    display: grid;
-    /* grid-template-areas:
-        'carousel carousel'
-        'titre hote'
-        'localisation etoiles'
-        'tags tags'
-       
-        'collapse1 collapse1'; */
-
-/*}} */
-
 .singleproduct {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -28,9 +13,6 @@
         'etoiles hote'
         'collapse1 collapse1'
         'collapse2 collapse2';
-
-    // & > h2 {
-    //     color: $primary-color;
 
     @include media(desktop) {
         grid-template-areas:
@@ -55,30 +37,6 @@
             justify-content: flex-end;
         }
     }
-
-    // .carousel {
-    //     aspect-ratio: 335/255;
-    //     grid-area: carousel;
-    //     @include media(desktop-model) {
-    //         aspect-ratio: 1240/415;
-    //         margin-bottom: 20px;
-    //     }
-    //     .arrow-right::before,
-    //     .arrow-left::before {
-    //         font-size: 1.5rem;
-    //         padding: 2rem;
-    //         @include media(desktop-model) {
-    //             font-size: 5rem;
-    //         }
-    //     }
-
-    //     // .arrow-left::before {
-    //     //     font-size: 1.5rem;
-    //     // }
-    // }
-    // & > small {
-    //     grid-area: localisation;
-    // }
 
     & > ul > li {
         padding: 0rem;
@@ -107,33 +65,15 @@
         flex-direction: column;
     }
 
-    & > h3 {
-        grid-area: localisation;
-        color: $primary-color;
-        /** existe t il un autre moyen? */
-        margin-top: -20px;
-    }
-
-    // .host {
-    //     grid-area: hote;
-    //     display: flex;
-    //     gap: 15px;
-    //     align-items: center;
-    //     justify-content: flex-end;
-    //     & > p {
-    //         color: $primary-color;
-    //     }
+    // & > h3 {
+    //     grid-area: localisation;
+    //     color: $primary-color;
+    //     /** existe t il un autre moyen? */
+    //     margin-top: -20px;
     // }
 }
 
-/* .singleproduct .stars {
-    grid-area: etoiles;
-    font-size: 1.4rem;
-    align-items: center;
-    justify-content: flex-end;
-} */
-
-.singleproduct .collapsible {
+.singleproduct .collapsible:first-of-type {
     grid-area: collapse1;
     justify-content: flex-end;
     align-items: center;

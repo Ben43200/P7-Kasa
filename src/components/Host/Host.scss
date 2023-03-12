@@ -21,6 +21,9 @@
         color: $primary-color;
         font-size: 1.5rem;
         display: flex;
+        width: 63px;
+        text-align: right;
+        justify-content: flex-end;
     }
     .author-picture {
         grid-area: content;

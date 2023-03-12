@@ -9,6 +9,9 @@
   color: #ff6060;
   font-size: 1.5rem;
   display: flex;
+  width: 63px;
+  text-align: right;
+  justify-content: flex-end;
 }
 .host .author-picture {
   grid-area: content;
