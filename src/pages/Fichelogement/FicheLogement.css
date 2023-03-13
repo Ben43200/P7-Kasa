@@ -40,7 +40,7 @@ $size possible values :
   color: #fff;
   line-height: 25px;
   padding: 0 10px;
-  margin: 10px;
+  margin: 0 10px;
   font-size: 0.9rem;
 }
 @media screen and (min-width: 1024px) {

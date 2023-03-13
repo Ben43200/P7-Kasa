@@ -1,18 +1,17 @@
 @import '../../css/variables.scss';
 @import '../../css/mixinAndFunctions.scss';
 
-.singleproduct .collapse {
-    grid-area: collapse1;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-}
+.singleproduct {
+    .collapse {
+        grid-area: collapse1;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
 
-.singleproduct .collapse:last-of-type {
-    grid-area: collapse2;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
+    .collapse:last-of-type {
+        grid-area: collapse2;
+    }
 }
 
 .collapse {

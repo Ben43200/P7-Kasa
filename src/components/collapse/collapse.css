@@ -12,12 +12,8 @@ $size possible values :
   align-items: center;
   width: 100%;
 }
-
 .singleproduct .collapse:last-of-type {
   grid-area: collapse2;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
 }
 
 .collapse {
