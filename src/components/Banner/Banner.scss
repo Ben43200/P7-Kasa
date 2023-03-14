@@ -17,8 +17,10 @@
         color: $primary-color;
         font-size: 0.75rem;
         text-decoration: none;
+        text-transform: uppercase;
         @include media(tablet) {
             font-size: 1rem;
+            text-transform: capitalize;
         }
         &.active {
             border-bottom: 1px solid $primary-color;

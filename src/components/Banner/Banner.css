@@ -25,10 +25,12 @@ $size possible values :
   color: #ff6060;
   font-size: 0.75rem;
   text-decoration: none;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   .menu > a {
     font-size: 1rem;
+    text-transform: capitalize;
   }
 }
 .menu > a.active {
