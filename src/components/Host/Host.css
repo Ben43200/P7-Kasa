@@ -31,7 +31,13 @@ $size possible values :
   grid-area: content;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 60px;
-  height: 60px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .host .author-picture {
+    width: 64px;
+    height: 64px;
+  }
 }/*# sourceMappingURL=Host.css.map */
