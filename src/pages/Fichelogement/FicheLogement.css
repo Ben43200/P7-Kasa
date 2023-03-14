@@ -70,20 +70,6 @@ $size possible values :
   flex-direction: column;
 }
 
-.singleproduct .collapsible:first-of-type {
-  grid-area: collapse1;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-}
-
-.singleproduct .collapsible:last-of-type {
-  grid-area: collapse2;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-}
-
 .stars {
   display: inline-flex;
   font-family: "Font Awesome 5 Free";

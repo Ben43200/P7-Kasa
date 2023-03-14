@@ -1,3 +1,11 @@
+/*
+$size possible values : 
+    tablet
+    desktop
+    laptop-desktop
+    large-desktop
+    desktop-mockup
+*/
 * {
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
@@ -15,7 +23,7 @@ body {
   --largeurWrapper: 10px;
   --largeurContenu: calc(100vw - 20px);
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   :root {
     --hauteurHeader: 9rem;
     --largeurWrapper: auto;

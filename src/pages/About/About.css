@@ -20,13 +20,6 @@ $size possible values :
   }
 }
 
-/* .heading img{
-    grid-area: content;
-    border-radius: 1.5rem;
-    background: rgba(0,0,0,.5);
-    opacity: 0.55;
-  } 
-/* /* */
 .fond-about {
   border-radius: 10px;
   grid-area: content;
@@ -35,7 +28,6 @@ $size possible values :
   background-image: url(../../images/mobile-about-background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background: rgba(0,0,0,.5); */
   opacity: 0.55;
 }
 @media screen and (min-width: 768px) {

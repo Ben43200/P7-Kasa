@@ -20,6 +20,9 @@ export default function Carousel({ images }) {
     function arrow(direction, method) {
         return <span onClick={method}> <i className={"arrow-" + direction}></i></span>;
     }
+    //   function currentIndex(position) {
+    //     return <aside className={"currentIndex" + position}></aside>;
+    //   }
 
     return (
         <div className="carousel">
