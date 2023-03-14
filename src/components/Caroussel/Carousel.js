@@ -28,7 +28,7 @@ export default function Carousel({ images }) {
         <div className="carousel">
             <img src={`${images[position]}`} alt="super" />
             {images.length > 1 && arrow("left", decrement)}
-            <aside>{position + 1} / {images.length}</aside>
+            {images.length > 1 ? (<aside>{position + 1} / {images.length}</aside>) : (null)}
             {images.length > 1 && arrow("right", increment)}
         </div>
     );
