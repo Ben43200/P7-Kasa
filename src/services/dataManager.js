@@ -33,7 +33,6 @@ let data;
  * @return  {Promise.<logementMainPage>}  [return description]
  */
 async function getLogements() {
-    // const api = await fetch("https://jsonplaceholder.typicode.com/users");
     if (!data) {
         const response = await fetch("/logement.json");
         data = await response.json();
@@ -54,7 +53,7 @@ async function getLogements() {
  *
  * @return  {Promise.<logement>}      [return description]
  */
-async function getOneLogement(id){
+async function getOneLogement(id) {
     if (!data) {
         const response = await fetch("/logement.json");
         data = await response.json();

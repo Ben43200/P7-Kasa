@@ -3,13 +3,13 @@ import { useState, useRef, useEffect } from "react"; //import des hooks de base 
 import "./collapse.scss";
 
 export default function Collapse(props) {
-    const [toggle, setToggle] = useState(false); // je definie le state du toggle (et false par défaut)
+    const [toggle, setToggle] = useState(false); // je definis le state du toggle (et false par défaut)
     const [heightEl, setHeightEl] = useState(); // je definie le state de la hauteur du collapse
 
     const isList = Array.isArray(props.aboutText);
 
     const toggleState = () => {
-        //je définie la fonction toggleState qui modifie la valeur toggle au clic
+        //je définis la fonction toggleState qui modifie la valeur toggle au clic
         setToggle(!toggle);
     };
 
@@ -24,13 +24,7 @@ export default function Collapse(props) {
         <div className={`collapse ${props.aboutStyle}`}>
             <div onClick={toggleState} className="collapse__visible">
                 <h2>{props.aboutTitle}</h2>
-                {/* <img
-                    className={toggle ? "chevron rotated" : "chevron"}
-                    src={Chevron}
-                    alt="chevron"
-                /> */}
                 <div className={`chevron ${toggle ? "unfold" : ""}`}></div>
-                {/* <div className={toggle ? "chevron rotated" : "chevron"}></div> */}
             </div>
             <div
                 ref={refHeight}
@@ -42,9 +36,6 @@ export default function Collapse(props) {
                     ? <MakeList list={props.aboutText} />
                     : `${props.aboutText}`
                 }</div>
-
-                {/* <p aria-hidden={toggle ? "true" : "false"}>{props.aboutText}</p> */}
-
             </div>
         </div>
     );

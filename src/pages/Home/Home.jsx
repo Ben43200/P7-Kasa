@@ -2,12 +2,7 @@
 import "./Home.scss";
 import { getLogements } from "../../services/dataManager";
 import background from "../../images/background-banner.png";
-// import Cards from "../Card";
-// import FicheLogement from "../Fichelogement/FicheLogement";
 import React, { useEffect, useState } from "react";
-
-// import Card from "../Card";
-// import Carousel from "../../components/Caroussel/Carousel";
 import HomeCard from "../../components/HomeCard/HomeCard";
 
 export default function Home() {

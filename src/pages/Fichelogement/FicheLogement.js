@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./FicheLogement.scss";
-// import Cards from "./GetCard";
 import Carousel from "../../components/Caroussel/Carousel";
-// import Collapsible from "../../components/Collapsible/Collapsible";
 import Collapse from "../../components/collapse/Collapse";
 import Host from "../../components/Host/Host";
 import { getOneLogement } from "../../services/dataManager";
@@ -21,7 +19,6 @@ export default function FicheLogement(props) {
                     : navigate("/error");
             });
     }, [id]);
-    console.log(test);
     const { title, location, rating, host, tags, equipments, description } = test;
     return test.id !== null
         ? (
@@ -31,14 +28,9 @@ export default function FicheLogement(props) {
                     {title}
                     <small>{location}</small>
                 </h2>
-                {/* <div className="host-stars"> */}
                 <Host {...host} />
                 <div className={"stars qty" + rating}> </div>
-                {/* </div> */}
                 <Tags tags={tags} />
-                {/* <div className={"stars qty" + rating}> </div> */}
-                {/* <Collapsible aboutTitle="Description" aboutText={description} />
-                <Collapsible aboutTitle="Equipements" aboutText={equipments} /> */}
                 <Collapse aboutTitle="Description" aboutText={description} />
                 <Collapse aboutTitle="Equipements" aboutText={equipments} />
             </main>

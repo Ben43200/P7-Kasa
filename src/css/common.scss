@@ -1,3 +1,6 @@
+@import './mixinAndFunctions.scss';
+@import './variables.scss';
+
 * {
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
@@ -15,10 +18,8 @@ body {
     --largeurWrapper: 10px;
     --largeurContenu: calc(100vw - 20px);
 
-    @media screen AND (min-width: 1440px) {
+    @include media(desktop) {
         --hauteurHeader: 9rem;
-        // --hauteurHeading:auto;
-        // --hauteurFooter: 9rem;
         --largeurWrapper: auto;
         --largeurContenu: 1240px;
     }
@@ -37,7 +38,6 @@ body {
     max-width: 100vw;
     min-height: 100vh;
     row-gap: 20px;
-    // border: 1px solid red;
 }
 
 #root > header {

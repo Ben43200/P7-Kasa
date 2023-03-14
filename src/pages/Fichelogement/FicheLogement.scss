@@ -40,7 +40,6 @@
 
     & > ul > li {
         padding: 0rem;
-        // background-color: #ff6060;
         background-color: $primary-color;
         border-radius: 10px;
         color: #fff;
@@ -73,33 +72,11 @@
         display: flex;
         flex-direction: column;
     }
-
-    // & > h3 {
-    //     grid-area: localisation;
-    //     color: $primary-color;
-    //     /** existe t il un autre moyen? */
-    //     margin-top: -20px;
-    // }
-}
-
-.singleproduct .collapsible:first-of-type {
-    grid-area: collapse1;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-}
-
-.singleproduct .collapsible:last-of-type {
-    grid-area: collapse2;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
 }
 
 .stars {
     display: inline-flex;
     font-family: 'Font Awesome 5 Free';
-    // color: #ff6060;
     color: $primary-color;
 }
 

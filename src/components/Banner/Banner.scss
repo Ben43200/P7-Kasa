@@ -21,14 +21,9 @@
             font-size: 1rem;
         }
         &.active {
-            border-bottom: 1px solid red;
+            border-bottom: 1px solid $primary-color;
         }
     }
-
-    // &:hover,
-    // &:focus {
-    //     text-decoration-line: underline;
-    // }
 
     @include media(desktop) {
         & > a {

@@ -5,9 +5,7 @@
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     margin: 0;
-    /* overflow-x: hidden; */
     padding: 0;
-    /* width: 100vw; */
 }
 .heading {
     grid-area: heading;
@@ -24,7 +22,6 @@
 .heading img {
     grid-area: content;
     border-radius: 1.5rem;
-    /* background: rgba(0,0,0,.5); */
     opacity: 0.55;
     width: 100%;
     object-fit: cover;
@@ -54,8 +51,6 @@
     object-fit: cover;
     overflow-clip-margin: content-box;
     overflow: clip;
-    /* border: 2px solid white; */
-
     border-radius: 15px;
 }
 

@@ -4,7 +4,6 @@ import "./carousel.scss";
 import React, { useState } from "react";
 
 export default function Carousel({ images }) {
-    // console.log(images);
     const [position, setPosition] = useState(0);
 
     function increment() {
