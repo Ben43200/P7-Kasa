@@ -76,6 +76,10 @@
         color: $primary-color;
         display: flex;
         flex-direction: column;
+        font-size: 1.12rem;
+        @include media(desktop) {
+            font-size: 2.25rem;
+        }
     }
 }
 

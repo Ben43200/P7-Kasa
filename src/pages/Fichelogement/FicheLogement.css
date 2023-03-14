@@ -73,6 +73,12 @@ $size possible values :
   color: #ff6060;
   display: flex;
   flex-direction: column;
+  font-size: 1.12rem;
+}
+@media screen and (min-width: 1024px) {
+  .singleproduct > h2 {
+    font-size: 2.25rem;
+  }
 }
 
 .stars {
