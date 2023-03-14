@@ -12,14 +12,16 @@ body {
 }
 
 :root {
-    --hauteurHeader: 4rem;
+    // --hauteurHeader: 4rem;
+    --hauteurHeader: 4.2rem;
     --hauteurHeading: auto;
     --hauteurFooter: 13rem;
     --largeurWrapper: 10px;
     --largeurContenu: calc(100vw - 20px);
 
     @include media(desktop) {
-        --hauteurHeader: 9rem;
+        // --hauteurHeader: 9rem;
+        --hauteurHeader: 7rem;
         --largeurWrapper: auto;
         --largeurContenu: 1240px;
     }

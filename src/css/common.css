@@ -17,7 +17,7 @@ body {
 }
 
 :root {
-  --hauteurHeader: 4rem;
+  --hauteurHeader: 4.2rem;
   --hauteurHeading: auto;
   --hauteurFooter: 13rem;
   --largeurWrapper: 10px;
@@ -25,7 +25,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   :root {
-    --hauteurHeader: 9rem;
+    --hauteurHeader: 7rem;
     --largeurWrapper: auto;
     --largeurContenu: 1240px;
   }

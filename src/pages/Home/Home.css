@@ -75,7 +75,11 @@ $size possible values :
   gap: 30px;
   justify-content: center;
   padding: 30px 0px;
-  margin-top: 2.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .cards-container {
+    margin-top: 15px;
+  }
 }
 
 .banner-text {
