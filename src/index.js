@@ -3,11 +3,8 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import About from "./pages/About/About";
 import FicheLogement from "./pages/Fichelogement/FicheLogement";
-// import Card from "./pages/Card";
 import Home from "./pages/Home/Home";
 import Error from "./pages/Error/Error";
-// import Carousel from "./components/Caroussel/Carousel";
-
 import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
 
