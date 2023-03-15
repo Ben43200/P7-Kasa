@@ -92,10 +92,20 @@ $size possible values :
   font-weight: bold;
   letter-spacing: 0.2rem;
 }
+@media screen and (min-width: 1024px) {
+  .stars::before {
+    letter-spacing: 0.6rem;
+  }
+}
 
 .stars::after {
   font-weight: 400;
   letter-spacing: 0.2rem;
+}
+@media screen and (min-width: 1024px) {
+  .stars::after {
+    letter-spacing: 0.6rem;
+  }
 }
 
 .stars.qty4::before {
