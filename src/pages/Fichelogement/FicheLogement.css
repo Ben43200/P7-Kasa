@@ -95,6 +95,7 @@ $size possible values :
 
 .stars::after {
   font-weight: 400;
+  letter-spacing: 0.2rem;
 }
 
 .stars.qty4::before {
