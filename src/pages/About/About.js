@@ -10,15 +10,17 @@ export default function About() {
             <div className="heading-container">
                 <div className="fond-about"></div>
             </div>
-            {aboutTab.map((rule, id) => (
-                <Collapse
-                    key={id}
-                    aboutTitle={rule.Title}
-                    aboutText={rule.Text}
-                    aboutStyle="about-style"
-                />
+            <section className="about-container">
+                {aboutTab.map((rule, id) => (
+                    <Collapse
+                        key={id}
+                        aboutTitle={rule.Title}
+                        aboutText={rule.Text}
+                        aboutStyle="about-style"
+                    />
 
-            ))}
+                ))}
+            </section>
         </main>
     );
 }

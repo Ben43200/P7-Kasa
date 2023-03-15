@@ -27,3 +27,18 @@
         border-radius: 25px;
     }
 }
+
+.about-container {
+    // display: grid;
+    // grid-template-rows: repeat(4, 250px);
+    // grid:
+    //     'auto 1024px auto'
+    //     '. 1024px . '
+    //     ' . 1024px '
+    //     ' . 1024px .';
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}

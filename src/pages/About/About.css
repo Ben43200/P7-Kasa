@@ -36,4 +36,11 @@ $size possible values :
     background-repeat: no-repeat;
     border-radius: 25px;
   }
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }/*# sourceMappingURL=About.css.map */

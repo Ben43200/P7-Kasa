@@ -91,7 +91,15 @@
 
 .about-style {
     width: 100%;
-    flex-direction: column;
+    // flex-direction: column;
+    @include media(desktop) {
+        width: 1024px;
+        // display: flex;
+        // flex-direction: column;
+        // /* justify-content: center; */
+        // align-items: center;
+        // grid-area: about;
+    }
 }
 
 .equipList {

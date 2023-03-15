@@ -94,7 +94,11 @@ $size possible values :
 
 .about-style {
   width: 100%;
-  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .about-style {
+    width: 1024px;
+  }
 }
 
 .equipList {
