@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react"; //import des hooks de base react
 // import Chevron from "../../images/vectorBas.svg";
 import "./collapse.scss";
+import MakeList from "./MakeList";
 
 export default function Collapse(props) {
     const [toggle, setToggle] = useState(false); // je definis le state du toggle (et false par défaut)
@@ -41,12 +42,12 @@ export default function Collapse(props) {
     );
 }
 
-function MakeList({ list }) {
-    return (
-        <ul>
-            {
-                list.map((entry, i) => <li key={"li" + i} className="listEquipements">{entry}</li>)
-            }
-        </ul>
-    );
-}
+// function MakeList({ list }) {
+//     return (
+//         <ul>
+//             {
+//                 list.map((entry, i) => <li key={"li" + i} className="listEquipements">{entry}</li>)
+//             }
+//         </ul>
+//     );
+// }
