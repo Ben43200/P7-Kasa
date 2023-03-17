@@ -43,7 +43,7 @@ $size possible values :
   text-decoration: none;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 5%, rgba(0, 0, 0, 0) 75%);
   margin: 0;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 0.5rem;
 }
 
