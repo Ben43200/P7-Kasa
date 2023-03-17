@@ -21,7 +21,6 @@ $size possible values :
   background: #000;
   border-radius: 10px;
   margin: 10px 0;
-  height: 111px;
 }
 @media screen and (min-width: 1024px) {
   .heading {
@@ -38,6 +37,7 @@ $size possible values :
   -o-object-fit: cover;
      object-fit: cover;
   height: 111px;
+  height: 100%;
   border-radius: 10px;
 }
 @media screen and (min-width: 1024px) {
