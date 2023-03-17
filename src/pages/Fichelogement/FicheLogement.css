@@ -38,7 +38,7 @@ $size possible values :
   background-color: #ff6060;
   border-radius: 5px;
   color: #fff;
-  line-height: 16px;
+  line-height: 18px;
   padding: 0 15px;
   margin-right: 10px;
   font-size: 0.62rem;
@@ -53,6 +53,8 @@ $size possible values :
   .singleproduct > ul > li {
     font-size: 0.87rem;
     width: 115px;
+    height: 25px;
+    line-height: 25px;
   }
 }
 .singleproduct > ul {

@@ -39,7 +39,7 @@ $size possible values :
 }
 @media screen and (min-width: 1024px) {
   .collapse__visible {
-    height: 47px;
+    height: 52px;
   }
 }
 .collapse__visible h2 {
