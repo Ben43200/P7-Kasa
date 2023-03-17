@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from "react"; //import des hooks de base react
-// import Chevron from "../../images/vectorBas.svg";
 import "./collapse.scss";
 import MakeList from "./MakeList";
 
@@ -41,13 +40,3 @@ export default function Collapse(props) {
         </div>
     );
 }
-
-// function MakeList({ list }) {
-//     return (
-//         <ul>
-//             {
-//                 list.map((entry, i) => <li key={"li" + i} className="listEquipements">{entry}</li>)
-//             }
-//         </ul>
-//     );
-// }
