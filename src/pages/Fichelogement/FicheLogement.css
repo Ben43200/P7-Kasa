@@ -62,7 +62,8 @@ $size possible values :
   display: flex;
   list-style: none;
   padding: 0px;
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .singleproduct > li {
   font-size: 10px;
@@ -83,6 +84,7 @@ $size possible values :
 @media screen and (min-width: 1024px) {
   .singleproduct > h2 {
     font-size: 2.25rem;
+    width: 130%;
   }
 }
 

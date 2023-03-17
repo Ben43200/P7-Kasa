@@ -67,7 +67,8 @@
         list-style: none;
         // padding-inline-start: 0;
         padding: 0px;
-        margin: 0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
     }
     & > li {
         font-size: 10px;
@@ -84,6 +85,7 @@
         margin-top: 0;
         @include media(desktop) {
             font-size: 2.25rem;
+            width: 130%;
         }
     }
 }
