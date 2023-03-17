@@ -18,7 +18,12 @@ $size possible values :
 
 .collapse {
   width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
+}
+@media screen and (min-width: 1024px) {
+  .collapse {
+    margin: 20px 0;
+  }
 }
 .collapse__visible {
   background: #ff6060;
@@ -94,11 +99,12 @@ $size possible values :
 
 .about-style {
   width: 100%;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 @media screen and (min-width: 1024px) {
   .about-style {
     width: 1024px;
+    margin: 20px 0;
   }
 }
 

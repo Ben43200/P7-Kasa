@@ -16,7 +16,10 @@
 
 .collapse {
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
+    @include media(desktop) {
+        margin: 20px 0;
+    }
 
     &__visible {
         background: $primary-color;
@@ -91,7 +94,7 @@
 
 .about-style {
     width: 100%;
-    margin: 15px 0;
+    margin: 10px 0;
     // flex-direction: column;
     @include media(desktop) {
         width: 1024px;
@@ -100,6 +103,7 @@
         // /* justify-content: center; */
         // align-items: center;
         // grid-area: about;
+        margin: 20px 0;
     }
 }
 
