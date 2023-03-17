@@ -41,13 +41,14 @@
     & > ul > li {
         padding: 0rem;
         background-color: $primary-color;
-        border-radius: 10px;
+        border-radius: 5px;
         color: #fff;
-        line-height: 25px;
+        line-height: 16px;
         padding: 0 15px;
         margin-right: 10px;
         font-size: 0.62rem;
         width: 84px;
+        height: 18px;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
@@ -78,6 +79,7 @@
         display: flex;
         flex-direction: column;
         font-size: 1.12rem;
+        margin-top: 0;
         @include media(desktop) {
             font-size: 2.25rem;
         }
