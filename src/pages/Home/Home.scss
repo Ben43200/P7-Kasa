@@ -14,7 +14,8 @@
     grid-template-areas: 'content';
     background: #000;
     border-radius: 10px;
-    margin-top: 10px;
+    margin: 10px 0;
+    // margin-bottom: 10px;
     @include media(desktop) {
         border-radius: 25px;
     }

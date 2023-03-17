@@ -20,7 +20,7 @@ $size possible values :
   grid-template-areas: "content";
   background: #000;
   border-radius: 10px;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 @media screen and (min-width: 1024px) {
   .heading {
