@@ -21,10 +21,12 @@ $size possible values :
   background: #000;
   border-radius: 10px;
   margin: 10px 0;
+  height: 111px;
 }
 @media screen and (min-width: 1024px) {
   .heading {
     border-radius: 25px;
+    height: 223px;
   }
 }
 
@@ -42,11 +44,6 @@ $size possible values :
   .heading img {
     border-radius: 25px;
   }
-}
-
-.banner-text {
-  color: white;
-  z-index: 1;
 }
 
 .stock-container {
@@ -89,9 +86,15 @@ $size possible values :
   justify-content: center;
   font-size: 2rem;
   grid-area: content;
+  color: white;
+  z-index: 1;
+  width: 250px;
+  margin-left: 10px;
 }
 @media screen and (min-width: 768px) {
   .banner-text {
     font-size: 3rem;
+    width: 100%;
+    margin-left: 0;
   }
 }/*# sourceMappingURL=Home.css.map */
