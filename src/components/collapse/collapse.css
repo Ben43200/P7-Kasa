@@ -94,6 +94,7 @@ $size possible values :
 
 .about-style {
   width: 100%;
+  margin: 15px 0;
 }
 @media screen and (min-width: 1024px) {
   .about-style {

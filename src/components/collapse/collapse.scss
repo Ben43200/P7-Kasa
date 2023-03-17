@@ -91,6 +91,7 @@
 
 .about-style {
     width: 100%;
+    margin: 15px 0;
     // flex-direction: column;
     @include media(desktop) {
         width: 1024px;
