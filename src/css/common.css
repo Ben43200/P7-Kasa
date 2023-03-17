@@ -35,7 +35,6 @@ body {
   display: grid;
   grid: ".      header  .     " var(--hauteurHeader) ".      heading .     " var(--hauteurHeading) ".      main    .     " auto "footer footer footer " var(--hauteurFooter)/var(--largeurWrapper) var(--largeurContenu) var(--largeurWrapper);
   max-width: 100vw;
-  min-height: 100vh;
   row-gap: 10px;
 }
 
