@@ -20,13 +20,10 @@ export default function Carousel({ images }) {
     function arrow(direction, method) {
         return <span onClick={method}> <i className={"arrow-" + direction}></i></span>;
     }
-    //   function currentIndex(position) {
-    //     return <aside className={"currentIndex" + position}></aside>;
-    //   }
 
     return (
         <div className="carousel">
-            <img src={`${images[position]}`} alt="super" />
+            <img src={`${images[position]}`} alt="carousel" />
             {images.length > 1 && arrow("left", decrement)}
             {images.length > 1 ? (<aside>{position + 1} / {images.length}</aside>) : (null)}
             {images.length > 1 && arrow("right", increment)}

@@ -38,3 +38,10 @@
         font-size: 18px;
     }
 }
+
+.error {
+    min-height: calc(100vh - var(--hauteurHeader) - var(--hauteurFooter));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

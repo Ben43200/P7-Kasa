@@ -82,10 +82,15 @@
         display: flex;
         flex-direction: column;
         font-size: 1.12rem;
+        font-weight: 500;
         margin-top: 0;
         @include media(desktop) {
             font-size: 2.25rem;
             width: 130%;
+        }
+        small {
+            margin-top: 0.5rem;
+            font-weight: 400;
         }
     }
 }

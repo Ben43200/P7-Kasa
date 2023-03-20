@@ -14,8 +14,9 @@
         width: 120px;
         text-align: right;
         justify-content: flex-end;
+        width: 63px;
         @include media(desktop) {
-            width: 63px;
+            // width: 63px;
             font-size: 1.2rem;
         }
     }

@@ -4,7 +4,7 @@ import MakeList from "./MakeList";
 
 export default function Collapse(props) {
     const [toggle, setToggle] = useState(false); // je definis le state du toggle (et false par défaut)
-    const [heightEl, setHeightEl] = useState(); // je definie le state de la hauteur du collapse
+    const [heightEl, setHeightEl] = useState(); // je definis le state de la hauteur du collapse
 
     const isList = Array.isArray(props.aboutText);
 
