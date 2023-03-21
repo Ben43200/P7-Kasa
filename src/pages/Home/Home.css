@@ -87,7 +87,7 @@ $size possible values :
   align-items: center;
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   grid-area: content;
   color: white;
   z-index: 1;
