@@ -79,6 +79,7 @@ $size possible values :
   display: flex;
   flex-direction: column;
   font-size: 1.12rem;
+  font-weight: 500;
   margin-top: 0;
 }
 @media screen and (min-width: 1024px) {
@@ -86,6 +87,10 @@ $size possible values :
     font-size: 2.25rem;
     width: 130%;
   }
+}
+.singleproduct > h2 small {
+  margin-top: 0.5rem;
+  font-weight: 400;
 }
 
 .stars {

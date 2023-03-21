@@ -32,9 +32,11 @@ $size possible values :
   text-align: center;
   color: #ff6060;
   width: 260px;
+  margin-top: -40px;
 }
 @media screen and (min-width: 1024px) {
   .errorText {
+    margin-top: 0px;
     font-size: 36px;
     width: 100%;
   }
@@ -48,4 +50,11 @@ $size possible values :
   .errorLinkHome {
     font-size: 18px;
   }
+}
+
+.error {
+  min-height: calc(100vh - var(--hauteurHeader) - var(--hauteurFooter));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=Error.css.map */

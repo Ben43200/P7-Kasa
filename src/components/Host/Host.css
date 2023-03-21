@@ -20,10 +20,10 @@ $size possible values :
   width: 120px;
   text-align: right;
   justify-content: flex-end;
+  width: 63px;
 }
 @media screen and (min-width: 1024px) {
   .host > h3 {
-    width: 63px;
     font-size: 1.2rem;
   }
 }

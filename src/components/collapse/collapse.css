@@ -71,6 +71,9 @@ $size possible values :
 .collapse__toggle .listEquipements {
   list-style: none;
 }
+.collapse ul {
+  margin: 0;
+}
 
 .animated {
   opacity: 1;
