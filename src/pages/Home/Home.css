@@ -21,6 +21,7 @@ $size possible values :
   background: #000;
   border-radius: 10px;
   margin: 10px 0;
+  height: 111px;
 }
 @media screen and (min-width: 1024px) {
   .heading {
@@ -67,17 +68,18 @@ $size possible values :
 
 .cards-container {
   align-items: center;
-  background-color: #f7f7f7;
+  background-color: white;
   border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  padding: 30px 0px;
 }
 @media screen and (min-width: 1024px) {
   .cards-container {
     margin-top: 15px;
+    background-color: #f7f7f7;
+    padding: 30px 0px;
   }
 }
 

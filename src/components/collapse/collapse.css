@@ -73,6 +73,7 @@ $size possible values :
 }
 .collapse ul {
   margin: 0;
+  padding-left: 0;
 }
 
 .animated {
