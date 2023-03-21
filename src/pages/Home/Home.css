@@ -84,15 +84,18 @@ $size possible values :
   border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
+  padding-top: 5px;
+  margin-bottom: 25px;
 }
 @media screen and (min-width: 1024px) {
   .cards-container {
     margin-top: 15px;
     background-color: #f7f7f7;
-    padding: 30px 0px;
-    gap: 30px;
+    padding: 50px 0px;
+    gap: 50px;
+    margin-bottom: 50px;
   }
 }
 
