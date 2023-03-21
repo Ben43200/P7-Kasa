@@ -20,8 +20,8 @@ body {
   --hauteurHeader: 4.2rem;
   --hauteurHeading: auto;
   --hauteurFooter: 13rem;
-  --largeurWrapper: 10px;
-  --largeurContenu: calc(100vw - 20px);
+  --largeurWrapper: 20px;
+  --largeurContenu: calc(100vw - 40px);
 }
 @media screen and (min-width: 1024px) {
   :root {

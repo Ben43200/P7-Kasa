@@ -23,6 +23,12 @@ $size possible values :
   margin: 10px 0;
   height: 111px;
 }
+@media screen and (min-width: 768px) {
+  .heading {
+    border-radius: 25px;
+    height: 140px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .heading {
     border-radius: 25px;
@@ -40,6 +46,12 @@ $size possible values :
   height: 111px;
   height: 100%;
   border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .heading img {
+    border-radius: 25px;
+    height: 140px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .heading img {
@@ -72,7 +84,7 @@ $size possible values :
   border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   justify-content: center;
 }
 @media screen and (min-width: 1024px) {
@@ -80,6 +92,7 @@ $size possible values :
     margin-top: 15px;
     background-color: #f7f7f7;
     padding: 30px 0px;
+    gap: 30px;
   }
 }
 
